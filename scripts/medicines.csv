@@ -1,0 +1,202 @@
+brand_name,salt,strength,pack_size,market_mrp,manufacturer,category
+# === Anti-Diabetic ===
+Glycomet 500,Metformin Hydrochloride,500 mg,10's,24.00,USV Pvt Ltd,Antidiabetic
+Glycomet 850,Metformin Hydrochloride,850 mg,10's,35.00,USV Pvt Ltd,Antidiabetic
+Glycomet SR 500,Metformin Hydrochloride SR,500 mg,10's,28.00,USV Pvt Ltd,Antidiabetic
+Glycomet SR 1000,Metformin Hydrochloride SR,1000 mg,10's,45.00,USV Pvt Ltd,Antidiabetic
+Glycomet-GP 1 Forte,Glimepiride + Metformin SR,1 mg + 500 mg,15's,135.00,USV Pvt Ltd,Antidiabetic
+Glycomet-GP 2 Forte,Glimepiride + Metformin SR,2 mg + 500 mg,15's,150.00,USV Pvt Ltd,Antidiabetic
+Amaryl 1,Glimepiride,1 mg,10's,65.00,Sanofi India,Antidiabetic
+Amaryl 2,Glimepiride,2 mg,10's,85.00,Sanofi India,Antidiabetic
+Amaryl M 1 Forte,Glimepiride + Metformin SR,1 mg + 500 mg,15's,140.00,Sanofi India,Antidiabetic
+Diapride 1,Glimepiride,1 mg,10's,30.00,Micro Labs Ltd,Antidiabetic
+Diapride 2,Glimepiride,2 mg,10's,40.00,Micro Labs Ltd,Antidiabetic
+Glyciphage 500,Metformin Hydrochloride,500 mg,10's,22.00,Franco-Indian Pharma,Antidiabetic
+Glyciphage SR 500,Metformin Hydrochloride SR,500 mg,10's,26.00,Franco-Indian Pharma,Antidiabetic
+Glyciphage SR 1000,Metformin Hydrochloride SR,1000 mg,10's,42.00,Franco-Indian Pharma,Antidiabetic
+Okamet 500,Metformin Hydrochloride,500 mg,10's,20.00,Ipca Laboratories,Antidiabetic
+Metfor 500,Metformin Hydrochloride,500 mg,10's,18.00,Dr. Reddy's Labs,Antidiabetic
+Gluformin 500,Metformin Hydrochloride,500 mg,10's,20.00,Lupin Ltd,Antidiabetic
+Diamicron MR 60,Gliclazide SR,60 mg,14's,98.00,Serdia Pharma (Servier),Antidiabetic
+Diamicron 80,Gliclazide,80 mg,10's,60.00,Serdia Pharma,Antidiabetic
+Reclide 80,Gliclazide,80 mg,10's,35.00,Dr. Reddy's Labs,Antidiabetic
+Pioglar 15,Pioglitazone,15 mg,10's,45.00,Lupin Ltd,Antidiabetic
+Pioglar 30,Pioglitazone,30 mg,10's,65.00,Lupin Ltd,Antidiabetic
+Pioz 15,Pioglitazone,15 mg,10's,35.00,USV Pvt Ltd,Antidiabetic
+Zoryl 1,Glimepiride,1 mg,10's,28.00,Ranbaxy (Sun Pharma),Antidiabetic
+Zoryl 2,Glimepiride,2 mg,10's,36.00,Ranbaxy (Sun Pharma),Antidiabetic
+Zoryl M 1,Glimepiride + Metformin SR,1 mg + 500 mg,15's,65.00,Ranbaxy (Sun Pharma),Antidiabetic
+Zoryl M 2,Glimepiride + Metformin SR,2 mg + 500 mg,15's,78.00,Ranbaxy (Sun Pharma),Antidiabetic
+Teniva 20,Teneligliptin,20 mg,10's,145.00,Lupin Ltd,Antidiabetic
+Glizid 80,Gliclazide,80 mg,10's,30.00,Mankind Pharma,Antidiabetic
+Volix 0.2,Voglibose,0.2 mg,10's,60.00,Sun Pharma,Antidiabetic
+Gliben 5,Glibenclamide,5 mg,10's,8.00,Ranbaxy (Sun Pharma),Antidiabetic
+
+# === Cardiac / BP / Cholesterol ===
+Amlokind 5,Amlodipine,5 mg,10's,42.00,Mankind Pharma,Cardiac
+Amlodac 5,Amlodipine,5 mg,10's,25.00,Mapra Laboratories,Cardiac
+Stamlo 5,Amlodipine,5 mg,10's,58.00,Dr. Reddy's Labs,Cardiac
+Stamlo 10,Amlodipine,10 mg,10's,74.00,Dr. Reddy's Labs,Cardiac
+Telma 40,Telmisartan,40 mg,10's,92.00,Glenmark Pharma,Cardiac
+Telma 80,Telmisartan,80 mg,10's,120.00,Glenmark Pharma,Cardiac
+Telmikind 40,Telmisartan,40 mg,10's,38.00,Mankind Pharma,Cardiac
+Telvas 40,Telmisartan,40 mg,10's,75.00,Lupin Ltd,Cardiac
+Telsartan 40,Telmisartan,40 mg,10's,45.00,Dr. Reddy's Labs,Cardiac
+Candesartan,Losartan,50 mg,10's,35.00,Dr. Reddy's Labs,Cardiac
+Losar 50,Losartan,50 mg,10's,28.00,Lupin Ltd,Cardiac
+Cardace 5,Ramipril,5 mg,10's,85.00,Sanofi India,Cardiac
+Ramistar 5,Ramipril,5 mg,10's,45.00,Lupin Ltd,Cardiac
+Ramipril 5,Ramipril,5 mg,10's,30.00,Cipla Ltd,Cardiac
+Concor 5,Bisoprolol,5 mg,10's,116.00,Merck Ltd,Cardiac
+Bisoheart 5,Bisoprolol,5 mg,10's,42.00,Lupin Ltd,Cardiac
+Lobeta 5,Bisoprolol,5 mg,10's,26.00,Micro Labs Ltd,Cardiac
+Metolar XR 50,Metoprolol Succinate ER,50 mg,10's,98.00,Cipla Ltd,Cardiac
+Betaloc ZOK 50,Metoprolol Succinate ER,50 mg,10's,135.00,AstraZeneca,Cardiac
+Atorva 10,Atorvastatin,10 mg,10's,78.00,Zydus Cadila,Cardiac
+Atorva 20,Atorvastatin,20 mg,10's,120.00,Zydus Cadila,Cardiac
+Atorlip 10,Atorvastatin,10 mg,10's,49.00,Cipla Ltd,Cardiac
+Atorvast 10,Atorvastatin,10 mg,10's,35.00,Lupin Ltd,Cardiac
+Rosuvas 10,Rosuvastatin,10 mg,10's,175.00,Sun Pharma,Cardiac
+Rozavel 10,Rosuvastatin,10 mg,10's,95.00,Lupin Ltd,Cardiac
+Rosulip 10,Rosuvastatin,10 mg,10's,60.00,Cipla Ltd,Cardiac
+Clopilet 75,Clopidogrel,75 mg,10's,110.00,Sun Pharma,Cardiac
+Plavix 75,Clopidogrel,75 mg,10's,240.00,Sanofi India,Cardiac
+Deplatt 75,Clopidogrel,75 mg,10's,85.00,Lupin Ltd,Cardiac
+Ecosprin 75,Aspirin,75 mg,14's,5.50,USV Pvt Ltd,Cardiac
+Ecosprin 150,Aspirin,150 mg,14's,8.00,USV Pvt Ltd,Cardiac
+Disprin 75,Aspirin,75 mg,14's,6.00,Reckitt Benckiser,Cardiac
+Enalapril 5,Enalapril,5 mg,10's,20.00,Torrent Pharma,Cardiac
+Telma-AM,Telmisartan + Amlodipine,40 mg + 5 mg,10's,185.00,Glenmark Pharma,Cardiac
+Telmikind-AM,Telmisartan + Amlodipine,40 mg + 5 mg,10's,65.00,Mankind Pharma,Cardiac
+Lasilactone,Furosemide + Spironolactone,40 mg + 25 mg,10's,90.00,Sanofi India,Cardiac
+Lasix 40,Furosemide,40 mg,10's,15.00,Sanofi India,Cardiac
+
+# === Pain / Analgesics ===
+Dolo 650,Paracetamol,650 mg,15's,34.00,Micro Labs Ltd,Analgesic
+Dolo 500,Paracetamol,500 mg,10's,22.00,Micro Labs Ltd,Analgesic
+Calpol 650,Paracetamol,650 mg,15's,30.00,GlaxoSmithKline Pharma,Analgesic
+Calpol 500,Paracetamol,500 mg,10's,18.00,GlaxoSmithKline Pharma,Analgesic
+Crocin 650,Paracetamol,650 mg,15's,28.00,GlaxoSmithKline Pharma,Analgesic
+Pacimol 650,Paracetamol,650 mg,15's,25.00,Ipca Laboratories,Analgesic
+Combiflam,Ibuprofen + Paracetamol,400 mg + 325 mg,15's,52.00,Sanofi India,Analgesic
+Ibugesic Plus,Ibuprofen + Paracetamol,400 mg + 325 mg,15's,38.00,Mankind Pharma,Analgesic
+Brufen 400,Ibuprofen,400 mg,15's,28.00,Abbott India,Analgesic
+Voveran 50,Diclofenac Sodium,50 mg,10's,22.00,Abbott Healthcare,Analgesic
+Voveran SR 100,Diclofenac Sodium SR,100 mg,10's,165.00,Norvartis (Abbott),Analgesic
+Diclomol 50,Diclofenac Sodium,50 mg,10's,12.00,Dr. Reddy's Labs,Analgesic
+Zerodol P,Aceclofenac + Paracetamol,100 mg + 325 mg,10's,88.00,Ipca Laboratories,Analgesic
+Aceclo Plus,Aceclofenac + Paracetamol,100 mg + 325 mg,10's,55.00,Micro Labs Ltd,Analgesic
+Nise 100,Nimesulide,100 mg,10's,35.00,Dr. Reddy's Labs,Analgesic
+Nimulid 100,Nimesulide,100 mg,10's,28.00,Panacea Biotec,Analgesic
+Zerodol SP,Aceclofenac + Paracetamol + Serratiopeptidase,100 mg + 325 mg + 15 mg,10's,128.00,Ipca Laboratories,Analgesic
+Aldigesic SP,Aceclofenac + Paracetamol + Serratiopeptidase,100 mg + 325 mg + 15 mg,10's,65.00,Unichem Labs,Analgesic
+Etoshine 90,Etoricoxib,90 mg,10's,120.00,Sun Pharma,Analgesic
+Etoshine 120,Etoricoxib,120 mg,10's,150.00,Sun Pharma,Analgesic
+Nise DT,Nimesulide,100 mg,10's,30.00,Dr. Reddy's Labs,Analgesic
+Flexon,Ibuprofen + Paracetamol,400 mg + 325 mg,15's,44.00,Mankind Pharma,Analgesic
+
+# === Antibiotics ===
+Augmentin 625 Duo,Amoxicillin + Clavulanic Acid,500 mg + 125 mg,6's,220.00,GlaxoSmithKline Pharma,Antibiotic
+Moxikind CV 625,Amoxicillin + Clavulanic Acid,500 mg + 125 mg,6's,155.00,Mankind Pharma,Antibiotic
+Clavam 625,Amoxicillin + Clavulanic Acid,500 mg + 125 mg,6's,145.00,Alkem Laboratories,Antibiotic
+Azithral 500,Azithromycin,500 mg,3's,132.00,Alembic Pharma,Antibiotic
+Azee 500,Azithromycin,500 mg,3's,95.00,Dr. Reddy's Labs,Antibiotic
+Zady 500,Azithromycin,500 mg,3's,78.00,Mankind Pharma,Antibiotic
+Zithrox 250,Azithromycin,250 mg,6's,72.00,Macleods Pharma,Antibiotic
+Taxim O 200,Cefixime,200 mg,10's,118.00,Alkem Laboratories,Antibiotic
+Zifi 200,Cefixime,200 mg,10's,110.00,FDC Ltd,Antibiotic
+Mahacef 200,Cefixime,200 mg,10's,75.00,Mankind Pharma,Antibiotic
+Ciplox 500,Ciprofloxacin,500 mg,10's,48.00,Cipla Ltd,Antibiotic
+Cifran 500,Ciprofloxacin,500 mg,10's,45.00,Ranbaxy,Antibiotic
+Levoflox 500,Levofloxacin,500 mg,10's,110.00,Cipla Ltd,Antibiotic
+O2,Ofloxacin + Ornidazole,200 mg + 500 mg,10's,145.00,Mankind Pharma,Antibiotic
+Zenflox OZ,Ofloxacin + Ornidazole,200 mg + 500 mg,10's,95.00,Mankind Pharma,Antibiotic
+
+# === Gastro ===
+Pantocid 40,Pantoprazole,40 mg,10's,155.00,Sun Pharma,Gastro
+Pan 40,Pantoprazole,40 mg,10's,148.00,Alkem Laboratories,Gastro
+Pantodac 40,Pantoprazole,40 mg,10's,95.00,Dr. Reddy's Labs,Gastro
+Pan DSR,Pantoprazole + Domperidone SR,40 mg + 30 mg SR,10's,195.00,Alkem Laboratories,Gastro
+Pantocid DSR,Pantoprazole + Domperidone SR,40 mg + 30 mg SR,10's,210.00,Sun Pharma,Gastro
+Omez 20,Omeprazole,20 mg,10's,65.00,Dr. Reddy's Labs,Gastro
+Omeol 20,Omeprazole,20 mg,10's,25.00,Cipla Ltd,Gastro
+Cizra 20,Omeprazole,20 mg,10's,22.00,Alkem Laboratories,Gastro
+Rablet 20,Rabeprazole,20 mg,10's,75.00,Lupin Ltd,Gastro
+Razo 20,Rabeprazole,20 mg,10's,40.00,Dr. Reddy's Labs,Gastro
+Domstal 10,Domperidone,10 mg,10's,35.00,Torrent Pharma,Gastro
+Domperi 10,Domperidone,10 mg,10's,12.00,Lupin Ltd,Gastro
+Ondem MD 4,Ondansetron,4 mg,10's,56.00,Alkem Laboratories,Gastro
+Emeset 4,Ondansetron,4 mg,10's,35.00,Cipla Ltd,Gastro
+Cyclopam,Mefenamic Acid + Dicyclomine,250 mg + 10 mg,10's,45.00,Indoco Remedies,Gastro
+Meftal Spas,Mefenamic Acid + Dicyclomine,250 mg + 10 mg,10's,52.00,Blue Cross Lab,Gastro
+
+# === Thyroid ===
+Thyronorm 50,Levothyroxine Sodium,50 mcg,10's,120.00,Abbott India,Thyroid
+Thyronorm 100,Levothyroxine Sodium,100 mcg,10's,130.00,Abbott India,Thyroid
+Eltroxin 50,Levothyroxine Sodium,50 mcg,10's,25.00,GlaxoSmithKline Pharma,Thyroid
+Eltroxin 100,Levothyroxine Sodium,100 mcg,10's,28.00,GlaxoSmithKline Pharma,Thyroid
+
+# === Respiratory / Allergy ===
+Montair LC,Montelukast + Levocetirizine,10 mg + 5 mg,10's,210.00,Cipla Ltd,Respiratory
+Montek LC,Montelukast + Levocetirizine,10 mg + 5 mg,10's,195.00,Lupin Ltd,Respiratory
+Telekast L,Montelukast + Levocetirizine,10 mg + 5 mg,10's,140.00,Mankind Pharma,Respiratory
+Allegra 120,Fexofenadine,120 mg,10's,218.00,Sanofi India,Allergy
+Fexo 120,Fexofenadine,120 mg,10's,58.00,Lupin Ltd,Allergy
+Alzine 120,Fexofenadine,120 mg,10's,40.00,Alkem Laboratories,Allergy
+Alerid 5,Cetirizine,10 mg,10's,12.00,Cipla Ltd,Allergy
+Cetzine 10,Cetirizine,10 mg,10's,35.00,GlaxoSmithKline Pharma,Allergy
+Lecope 5,Levocetirizine,5 mg,10's,15.00,Dr. Reddy's Labs,Allergy
+Asthalin Inhaler,Salbutamol,100 mcg,200 MDI,162.00,Cipla Ltd,Respiratory
+Asthalin 4,Salbutamol,4 mg,10's,10.00,Cipla Ltd,Respiratory
+Deriphyllin 150,Etophylline + Theophylline,77 mg + 23 mg,10's,35.00,Lupin Ltd,Respiratory
+Montair 10,Montelukast,10 mg,10's,185.00,Cipla Ltd,Respiratory
+
+# === Supplements & Vitamins ===
+Shelcal 500,Calcium + Vitamin D3,500 mg + 250 IU,10's,134.00,Torrent Pharma,Supplement
+Calcium Plus,Calcium + Vitamin D3,500 mg + 250 IU,10's,88.00,Mankind Pharma,Supplement
+Cipcal 500,Calcium + Vitamin D3,500 mg + 250 IU,10's,78.00,Cipla Ltd,Supplement
+Neurobion Forte,Vitamin B-Complex,Various,10's,42.00,P&G Health Ltd,Supplement
+Nurokind OD,Vitamin B-Complex,Various,10's,35.00,Mankind Pharma,Supplement
+Becosules,Multivitamin,Various,30's,45.00,Pfizer Ltd,Supplement
+Revital,Multivitamin,Various,30's,110.00,Abbott India,Supplement
+Uprise D3 60K,Cholecalciferol (Vitamin D3),60000 IU,1's,290.00,Alkem Laboratories,Supplement
+Calcirol 60K,Cholecalciferol (Vitamin D3),60000 IU,1's,60.00,Dr. Reddy's Labs,Supplement
+Folic Acid 5mg,Folic Acid,5 mg,10's,8.00,Cipla Ltd,Supplement
+Celin 500,Ascorbic Acid (Vitamin C),500 mg,15's,55.00,GlaxoSmithKline Pharma,Supplement
+Limcee 500,Ascorbic Acid (Vitamin C),500 mg,15's,65.00,Abbott India,Supplement
+Ferriup XT,Ferrous Ascorbate + Folic Acid,100 mg + 1.5 mg,10's,185.00,Emcure Pharma,Supplement
+Orofer XT,Ferrous Ascorbate + Folic Acid,100 mg + 1.5 mg,10's,195.00,Emcure Pharma,Supplement
+
+# === Anticoagulants ===
+Praxil 5,Apixaban,5 mg,10's,780.00,Lupin Ltd,Cardiac
+Eliquis 5,Apixaban,5 mg,10's,1680.00,Pfizer,Cardiac
+Xarelto 10,Rivaroxaban,10 mg,10's,242.00,Bayer,Cardiac
+
+# === Mental Health / Neuro ===
+Alprax 0.5,Alprazolam,0.5 mg,10's,42.00,Torrent Pharma,Neuro
+Anxit 0.5,Alprazolam,0.5 mg,10's,22.00,Cipla Ltd,Neuro
+Paxil 20,Paroxetine,20 mg,10's,185.00,GlaxoSmithKline Pharma,Neuro
+Nexit 20,Escitalopram,10 mg,10's,98.00,Sun Pharma,Neuro
+Restyl 25,Sertraline,25 mg,10's,40.00,Lupin Ltd,Neuro
+
+# === Urology ===
+Urimax 0.4,Tamsulosin,0.4 mg,10's,155.00,Cipla Ltd,Urology
+Uroalpha 0.4,Tamsulosin,0.4 mg,10's,85.00,Lupin Ltd,Urology
+Finax 5,Finasteride,5 mg,10's,155.00,Lupin Ltd,Urology
+
+# === Diabetes - Newer Drugs ===
+Januvia 50,Sitagliptin,50 mg,10's,380.00,MSD Pharma,Antidiabetic
+Januvia 100,Sitagliptin,100 mg,10's,430.00,MSD Pharma,Antidiabetic
+Janumet 50/500,Sitagliptin + Metformin,50 mg + 500 mg,10's,395.00,MSD Pharma,Antidiabetic
+Istamet 50/500,Sitagliptin + Metformin,50 mg + 500 mg,10's,145.00,Sun Pharma,Antidiabetic
+Ertolan 10,Sitagliptin,10 mg,10's,242.00,Lupin Ltd,Antidiabetic
+Ristaben 50,Sitagliptin,50 mg,10's,265.00,Dr. Reddy's Labs,Antidiabetic
+Galvus 50,Vildagliptin,50 mg,10's,285.00,Norvatis,Antidiabetic
+Galvus Met,Vildagliptin + Metformin,50 mg + 500 mg,10's,295.00,Norvatis,Antidiabetic
+Forxiga 10,Dapagliflozin,10 mg,10's,540.00,AstraZeneca,Antidiabetic
+Oxra 10,Dapagliflozin,10 mg,10's,242.00,Sun Pharma,Antidiabetic
+Jardiance 10,Empagliflozin,10 mg,10's,585.00,Boehringer Ingelheim,Antidiabetic
+Jardiance 25,Empagliflozin,25 mg,10's,625.00,Boehringer Ingelheim,Antidiabetic
+Glyxambi 10/5,Empagliflozin + Linagliptin,10 mg + 5 mg,10's,1120.00,Boehringer Ingelheim,Antidiabetic
+Trajenta 5,Linagliptin,5 mg,10's,490.00,Boehringer Ingelheim,Antidiabetic
+Amoxy 500,Amoxicillin,500 mg,10's,38.0,Cipla Ltd,Antibiotic

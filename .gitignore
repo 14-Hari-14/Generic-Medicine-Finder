@@ -1,0 +1,20 @@
+# Generated — rebuild with: python3 scripts/build-database.py
+db/medicines.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node (local dev only, never in repo)
+node_modules/
+package.json
+package-lock.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Env files (if any)
+.env
+.env.local

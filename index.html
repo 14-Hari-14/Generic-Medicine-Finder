@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic Medicine Finder — Janaushadhi Price Comparison</title>
+    <meta name="description" content="Find cheaper generic alternatives for your branded medicines. Compare prices with PMBJP Janaushadhi Kendras and save up to 90%.">
+    <meta name="theme-color" content="#FF9933">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+    <!-- Fuse.js for fuzzy search (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0">
+    </script>
+
+    <!-- jsPDF + html2canvas for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Hindi translation data -->
+    <script src="js/i18n.js">
+    </script>
+</head>
+<body class="bg-orange-50 min-h-screen flex flex-col">
+
+    <!-- ===== HEADER ===== -->
+    <header class="bg-white shadow-sm border-b border-orange-200">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white text-lg font-bold shadow">
+                    💊
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800 leading-tight">
+                        Generic Medicine Finder
+                    </h1>
+                    <p class="text-xs text-gray-500">
+                        PMBJP Janaushadhi Price Comparison
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <!-- Language Toggle -->
+                <button id="langToggle"
+                class="lang-toggle text-sm px-3 py-1.5 rounded-full border border-orange-300 text-orange-700 hover:bg-orange-100 transition">
+                🇮🇳 हिंदी
+            </button>
+
+            <!-- Data freshness badge -->
+            <span class="text-xs text-gray-400 hidden sm:inline" title="Data last updated">
+                📅 <span id="dataDate">Oct 2025</span>
+            </span>
+        </div>
+    </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="flex-1 max-w-4xl mx-auto w-full px-4 py-8">
+
+    <!-- Hero / Search Section -->
+    <section class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-2" data-i18n="heroTitle">
+            Find Generic Alternatives & Save
+        </h2>
+        <p class="text-gray-600 mb-6" data-i18n="heroSubtitle">
+            Type a brand name — see the active salt, Janaushadhi price, and your savings
+        </p>
+
+        <!-- Search Box -->
+        <div class="relative max-w-xl mx-auto" id="searchContainer">
+            <div class="flex gap-0">
+                <input type="search" id="searchInput"
+                class="search-input w-full px-5 py-4 text-lg rounded-l-xl border-2 border-orange-300 focus:border-orange-500 focus:outline-none bg-white shadow-sm"
+                placeholder="Search for a brand (e.g., Glycomet, Augmentin)"
+                data-i18n-placeholder="searchPlaceholder"
+                autocomplete="off"
+                aria-label="Search medicines">
+                <button id="searchClearBtn"
+                class="hidden px-4 bg-white border-t-2 border-b-2 border-orange-300 text-gray-400 hover:text-gray-600"
+                aria-label="Clear search">✕</button>
+                <button id="searchBtn"
+                class="px-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-r-xl transition shadow-sm"
+                aria-label="Search">
+                🔍
+            </button>
+        </div>
+
+        <!-- Suggestions dropdown -->
+        <div id="suggestions"
+        class="hidden absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-xl shadow-lg z-50 max-h-80 overflow-y-auto">
+    </div>
+</div>
+
+<!-- Popular Searches -->
+<div id="popularSearches" class="mt-4 flex flex-wrap justify-center gap-2 text-sm">
+    <span class="text-gray-500 mr-1" data-i18n="popularLabel">Popular:</span>
+    <button class="popular-btn px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-orange-300 hover:text-orange-600 transition text-gray-600" data-search="Glycomet 500">Glycomet 500</button>
+    <button class="popular-btn px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-orange-300 hover:text-orange-600 transition text-gray-600" data-search="Telma 40">Telma 40</button>
+    <button class="popular-btn px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-orange-300 hover:text-orange-600 transition text-gray-600" data-search="Augmentin 625 Duo">Augmentin 625</button>
+    <button class="popular-btn px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-orange-300 hover:text-orange-600 transition text-gray-600" data-search="Dolo 650">Dolo 650</button>
+    <button class="popular-btn px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-orange-300 hover:text-orange-600 transition text-gray-600" data-search="Atorva 10">Atorva 10</button>
+    <button class="popular-btn px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-orange-300 hover:text-orange-600 transition text-gray-600" data-search="Allegra 120">Allegra 120</button>
+</div>
+</section>
+
+<!-- ===== DISCLAIMER BANNER (visible on first load) ===== -->
+<div id="disclaimerBanner" class="max-w-4xl mx-auto px-4 mb-8">
+    <div class="relative bg-amber-50 border-2 border-amber-300 rounded-xl p-4 sm:p-5 shadow-sm">
+        <button id="dismissDisclaimer"
+        class="absolute top-2 right-2 sm:top-3 sm:right-3 w-7 h-7 flex items-center justify-center rounded-full text-amber-500 hover:text-amber-700 hover:bg-amber-100 transition text-lg"
+        aria-label="Dismiss disclaimer">✕</button>
+
+        <div class="flex items-start gap-3">
+            <span class="text-2xl sm:text-3xl flex-shrink-0 mt-0.5">🩺</span>
+            <div class="flex-1 pr-6">
+                <p class="font-bold text-amber-900 text-sm sm:text-base mb-1" data-i18n="bannerTitle">
+                    ⚠️ NOT MEDICAL ADVICE
+                </p>
+                <p class="text-amber-800 text-sm sm:text-base leading-relaxed" data-i18n-html="bannerText">
+                    This website is a <strong>social initiative</strong> to raise awareness about affordable generic
+                    alternatives available through the Government of India's PMBJP (Janaushadhi) scheme.
+                    <strong>Always follow your doctor's prescription.</strong> Do not switch or stop any medicine
+                    without consulting your doctor. Prices shown are approximate and may vary.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== RESULTS SECTION ===== -->
+<section id="resultsSection" class="hidden">
+    <div id="resultsCard" class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8">
+        <!-- Loading -->
+        <div id="loadingState" class="hidden text-center py-8">
+            <div class="animate-pulse text-4xl mb-3">💊</div>
+            <p class="text-gray-500" data-i18n="loading">Searching medicines...</p>
+        </div>
+
+        <!-- Not Found -->
+        <div id="notFoundState" class="hidden text-center py-10">
+            <div class="text-5xl mb-4">🤷</div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-2" data-i18n="notFoundTitle">Medicine not found</h3>
+            <p class="text-gray-500 mb-4" data-i18n="notFoundDesc">We couldn't find this brand in our database. Try a different spelling or search by salt name.</p>
+            <div id="similarSuggestions" class="text-sm text-gray-500">
+                <span data-i18n="didYouMean">Did you mean:</span>
+                <div id="similarList" class="flex flex-wrap justify-center gap-2 mt-2"></div>
+            </div>
+        </div>
+
+        <!-- Result Content -->
+        <div id="resultContent" class="hidden">
+            <!-- Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 pb-4 border-b border-gray-100">
+                <div>
+                    <h2 id="resultBrandName" class="text-2xl font-bold text-gray-800"></h2>
+                    <p id="resultManufacturer" class="text-sm text-gray-500"></p>
+                </div>
+                <span id="resultCategory" class="mt-2 sm:mt-0 text-xs px-3 py-1 rounded-full bg-orange-100 text-orange-700 font-medium"></span>
+            </div>
+
+            <!-- Salt / Composition -->
+            <div class="mb-6 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                <p class="text-xs text-blue-600 font-medium uppercase tracking-wide" data-i18n="activeSalt">Active Salt / Composition</p>
+                <p id="resultSalt" class="text-lg font-bold text-blue-800 mt-1"></p>
+                <p id="resultStrength" class="text-sm text-blue-600"></p>
+            </div>
+
+            <!-- Price Comparison Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <!-- Branded MRP -->
+                <div class="price-card p-5 rounded-xl bg-red-50 border border-red-100">
+                    <p class="text-xs text-red-500 font-medium uppercase tracking-wide" data-i18n="brandMRP">Branded MRP</p>
+                    <p class="text-3xl font-bold text-red-700 mt-1">
+                        ₹<span id="resultBrandMRP"></span>
+                    </p>
+                    <p class="text-xs text-red-400 mt-1">
+                        <span data-i18n="packOf">Pack of</span> <span id="resultPackSize"></span>
+                    </p>
+                    <p id="resultBrandNameSmall" class="text-xs text-red-300 mt-1"></p>
+                </div>
+
+                <!-- Janaushadhi Price -->
+                <div class="price-card p-5 rounded-xl bg-green-50 border border-green-100">
+                    <p class="text-xs text-green-600 font-medium uppercase tracking-wide" data-i18n="janaushadhiPrice">Jan Aushadhi Price</p>
+                    <p class="text-3xl font-bold text-green-700 mt-1">
+                        ₹<span id="resultGenericMRP"></span>
+                    </p>
+                    <p class="text-xs text-green-500 mt-1">
+                        <span data-i18n="sameSalt">Same salt · Same quality</span>
+                    </p>
+                    <p id="resultGenericName" class="text-xs text-green-400 mt-1"></p>
+                </div>
+            </div>
+
+            <!-- Savings -->
+            <div class="savings-card mb-6 p-6 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 border border-orange-200">
+                <p class="text-sm text-gray-500 mb-2" data-i18n="youSave">💰 You Save</p>
+                <div class="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+                    <span class="text-4xl font-black text-green-600" id="resultSavingsPct">0%</span>
+                    <span class="text-2xl font-bold text-green-700">₹<span id="resultSavingsAmt">0</span>/pack</span>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-orange-200">
+                    <div>
+                        <p class="text-xs text-gray-500" data-i18n="monthlySavings">📅 Monthly Savings</p>
+                        <p class="text-lg font-bold text-gray-800">₹<span id="resultMonthlySavings">0</span></p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500" data-i18n="yearlySavings">📅 Yearly Savings</p>
+                        <p class="text-lg font-bold text-gray-800">₹<span id="resultYearlySavings">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="downloadPDFBtn"
+                class="flex-1 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition shadow-sm">
+                📄 <span data-i18n="downloadPDF">Download Comparison PDF</span>
+            </button>
+            <a href="https://janaushadhi.gov.in/kendraSearch.aspx" target="_blank" rel="noopener noreferrer"
+            class="flex-1 px-6 py-3 bg-white border-2 border-gray-200 hover:border-orange-300 text-gray-700 font-semibold rounded-xl transition text-center">
+            📍 <span data-i18n="findKendra">Nearest Janaushadhi Kendra</span>
+        </a>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="mt-12 py-6 border-t border-orange-200 text-xs text-gray-500 text-center px-4">
+    <p class="mb-3">
+        <strong data-i18n="footerTitle">🩺 Social Initiative — Not Medical Advice</strong>
+    </p>
+    <p class="mb-2">
+        <span data-i18n="footerDisclaimer">This website is a non-governmental social initiative to spread awareness
+        about affordable generic medicine alternatives under the PMBJP (Janaushadhi) scheme. We do not provide
+        medical advice, diagnosis, or treatment recommendations. Always consult a registered medical practitioner
+        before making any changes to your medication. Prices shown are approximate and may vary.</span>
+    </p>
+    <p>
+        <span data-i18n="footerData">Data sourced from PMBJP (Janaushadhi) official price list.</span>
+        <span class="mx-2">·</span>
+        <a href="https://janaushadhi.gov.in" target="_blank" rel="noopener noreferrer" class="text-orange-600 hover:text-orange-700">janaushadhi.gov.in</a>
+    </p>
+</footer>
+
+</main>
+
+<!-- Hidden PDF template -->
+<div id="pdfTemplate" class="hidden">
+    <div id="pdfContent" class="p-8 bg-white font-sans" style="width: 600px;">
+        <div class="border-b-2 border-orange-500 pb-3 mb-4">
+            <h1 class="text-xl font-bold text-gray-800">Generic Medicine Price Comparison</h1>
+            <p class="text-xs text-gray-500">Generated by GenericMedicineFinder.in</p>
+        </div>
+
+        <table class="w-full text-sm">
+            <tr>
+                <td class="font-bold py-2 pr-4 text-gray-600 w-36">Brand Name</td>
+                <td class="py-2" id="pdfBrandName">—</td>
+            </tr>
+            <tr>
+                <td class="font-bold py-2 pr-4 text-gray-600">Active Salt</td>
+                <td class="py-2" id="pdfSalt">—</td>
+            </tr>
+            <tr>
+                <td class="font-bold py-2 pr-4 text-gray-600">Strength</td>
+                <td class="py-2" id="pdfStrength">—</td>
+            </tr>
+            <tr>
+                <td class="font-bold py-2 pr-4 text-gray-600">Pack Size</td>
+                <td class="py-2" id="pdfPack">—</td>
+            </tr>
+            <tr>
+                <td class="font-bold py-2 pr-4 text-gray-600">Manufacturer</td>
+                <td class="py-2" id="pdfManufacturer">—</td>
+            </tr>
+        </table>
+
+        <hr class="my-4">
+
+        <table class="w-full border-collapse text-sm">
+            <thead>
+                <tr class="bg-orange-50">
+                    <th class="text-left py-2 px-3 font-semibold text-gray-700">Details</th>
+                    <th class="text-right py-2 px-3 font-semibold text-gray-700">Branded</th>
+                    <th class="text-right py-2 px-3 font-semibold text-green-700">Jan Aushadhi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-gray-100">
+                    <td class="py-2 px-3 text-gray-600">Price (per pack)</td>
+                    <td class="py-2 px-3 text-right font-bold" id="pdfBrandMRP">—</td>
+                    <td class="py-2 px-3 text-right font-bold text-green-700" id="pdfGenericMRP">—</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                    <td class="py-2 px-3 text-gray-600">Savings (per pack)</td>
+                    <td class="py-2 px-3 text-right" colspan="2" id="pdfSavingsPerPack">—</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-3 text-gray-600">Monthly Savings (est.)</td>
+                    <td class="py-2 px-3 text-right" colspan="2" id="pdfMonthlySavings">—</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="my-4">
+
+        <p class="text-xs text-gray-500">💰 <strong>Total Yearly Savings: <span id="pdfYearlySavings">—</span></strong></p>
+
+        <div class="mt-6 p-3 bg-orange-50 rounded text-xs text-gray-600">
+            <p><strong>⚠️ Important:</strong> Always consult your doctor before switching. Same active salt does not always mean identical bioavailability. Show this sheet to your doctor or pharmacist.</p>
+            <p class="mt-2">Data source: PMBJP (Janaushadhi) official price list • Not a government publication</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,634 @@
+[
+  {
+    "code": "1030",
+    "name": "Aceclofenac",
+    "strength": "100 mg",
+    "unit": "10's",
+    "mrp": 4.37,
+    "category": "Analgesic"
+  },
+  {
+    "code": "1035",
+    "name": "Aceclofenac + Paracetamol",
+    "strength": "100 mg + 325 mg",
+    "unit": "10's",
+    "mrp": 8.0,
+    "category": "Analgesic"
+  },
+  {
+    "code": "9101",
+    "name": "Alprazolam",
+    "strength": "0.5 mg",
+    "unit": "10's",
+    "mrp": 12.0,
+    "category": "Neuro"
+  },
+  {
+    "code": "3001",
+    "name": "Amlodipine",
+    "strength": "5 mg",
+    "unit": "10's",
+    "mrp": 3.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "3002",
+    "name": "Amlodipine",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 5.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "4001",
+    "name": "Amoxicillin",
+    "strength": "250 mg",
+    "unit": "10's",
+    "mrp": 11.0,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "4002",
+    "name": "Amoxicillin",
+    "strength": "500 mg",
+    "unit": "10's",
+    "mrp": 26.26,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "4003",
+    "name": "Amoxicillin + Clavulanic Acid",
+    "strength": "500 mg + 125 mg",
+    "unit": "6's",
+    "mrp": 52.25,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "1070",
+    "name": "Aspirin (Gastro-resistant)",
+    "strength": "150 mg",
+    "unit": "14's",
+    "mrp": 2.7,
+    "category": "Analgesic"
+  },
+  {
+    "code": "3012",
+    "name": "Aspirin (Low Dose)",
+    "strength": "75 mg",
+    "unit": "14's",
+    "mrp": 3.5,
+    "category": "Cardiac"
+  },
+  {
+    "code": "3016",
+    "name": "Atenolol",
+    "strength": "50 mg",
+    "unit": "10's",
+    "mrp": 5.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "3008",
+    "name": "Atorvastatin",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 6.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "3009",
+    "name": "Atorvastatin",
+    "strength": "20 mg",
+    "unit": "10's",
+    "mrp": 9.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "4004",
+    "name": "Azithromycin",
+    "strength": "250 mg",
+    "unit": "6's",
+    "mrp": 40.0,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "4005",
+    "name": "Azithromycin",
+    "strength": "500 mg",
+    "unit": "3's",
+    "mrp": 42.0,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "3007",
+    "name": "Bisoprolol",
+    "strength": "5 mg",
+    "unit": "10's",
+    "mrp": 8.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "8001",
+    "name": "Calcium + Vitamin D3",
+    "strength": "500 mg + 250 IU",
+    "unit": "10's",
+    "mrp": 7.0,
+    "category": "Supplement"
+  },
+  {
+    "code": "4006",
+    "name": "Cefixime",
+    "strength": "200 mg",
+    "unit": "10's",
+    "mrp": 41.5,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "7006",
+    "name": "Cetirizine",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 5.5,
+    "category": "Allergy"
+  },
+  {
+    "code": "3017",
+    "name": "Chlorthalidone",
+    "strength": "12.5 mg",
+    "unit": "10's",
+    "mrp": 6.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "4007",
+    "name": "Ciprofloxacin",
+    "strength": "500 mg",
+    "unit": "10's",
+    "mrp": 20.0,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "3011",
+    "name": "Clopidogrel",
+    "strength": "75 mg",
+    "unit": "10's",
+    "mrp": 11.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "1020",
+    "name": "Diclofenac Sodium",
+    "strength": "50 mg",
+    "unit": "10's",
+    "mrp": 2.9,
+    "category": "Analgesic"
+  },
+  {
+    "code": "1025",
+    "name": "Diclofenac Sodium (SR)",
+    "strength": "100 mg",
+    "unit": "10's",
+    "mrp": 6.12,
+    "category": "Analgesic"
+  },
+  {
+    "code": "5004",
+    "name": "Domperidone",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 4.4,
+    "category": "Gastro"
+  },
+  {
+    "code": "9102",
+    "name": "Escitalopram",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 12.95,
+    "category": "Neuro"
+  },
+  {
+    "code": "1060",
+    "name": "Etoricoxib",
+    "strength": "90 mg",
+    "unit": "10's",
+    "mrp": 25.0,
+    "category": "Analgesic"
+  },
+  {
+    "code": "1065",
+    "name": "Etoricoxib",
+    "strength": "120 mg",
+    "unit": "10's",
+    "mrp": 33.0,
+    "category": "Analgesic"
+  },
+  {
+    "code": "7003",
+    "name": "Fexofenadine",
+    "strength": "120 mg",
+    "unit": "10's",
+    "mrp": 24.0,
+    "category": "Allergy"
+  },
+  {
+    "code": "9002",
+    "name": "Finasteride",
+    "strength": "5 mg",
+    "unit": "10's",
+    "mrp": 25.0,
+    "category": "Urology"
+  },
+  {
+    "code": "8003",
+    "name": "Folic Acid",
+    "strength": "5 mg",
+    "unit": "15's",
+    "mrp": 4.4,
+    "category": "Supplement"
+  },
+  {
+    "code": "3013",
+    "name": "Furosemide",
+    "strength": "40 mg",
+    "unit": "10's",
+    "mrp": 4.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "2011",
+    "name": "Glibenclamide",
+    "strength": "5 mg",
+    "unit": "10's",
+    "mrp": 4.05,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2008",
+    "name": "Gliclazide",
+    "strength": "80 mg",
+    "unit": "10's",
+    "mrp": 20.25,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2004",
+    "name": "Glimepiride",
+    "strength": "1 mg",
+    "unit": "10's",
+    "mrp": 4.38,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2005",
+    "name": "Glimepiride",
+    "strength": "2 mg",
+    "unit": "10's",
+    "mrp": 5.05,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2006",
+    "name": "Glimepiride + Metformin SR",
+    "strength": "1 mg + 500 mg",
+    "unit": "15's",
+    "mrp": 7.0,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2007",
+    "name": "Glimepiride + Metformin SR",
+    "strength": "2 mg + 500 mg",
+    "unit": "15's",
+    "mrp": 16.9,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2012",
+    "name": "Glipizide",
+    "strength": "5 mg",
+    "unit": "10's",
+    "mrp": 2.5,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "3018",
+    "name": "Hydrochlorothiazide",
+    "strength": "25 mg",
+    "unit": "10's",
+    "mrp": 7.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "1040",
+    "name": "Ibuprofen",
+    "strength": "400 mg",
+    "unit": "15's",
+    "mrp": 3.5,
+    "category": "Analgesic"
+  },
+  {
+    "code": "1045",
+    "name": "Ibuprofen + Paracetamol",
+    "strength": "400 mg + 325 mg",
+    "unit": "15's",
+    "mrp": 5.5,
+    "category": "Analgesic"
+  },
+  {
+    "code": "2015",
+    "name": "Insulin Glargine",
+    "strength": "100 IU/ml",
+    "unit": "3 ml cartridge",
+    "mrp": 266.0,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2014",
+    "name": "Insulin Human (NPH)",
+    "strength": "40 IU/ml",
+    "unit": "10 ml vial",
+    "mrp": 71.0,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "7002",
+    "name": "Levocetirizine",
+    "strength": "5 mg",
+    "unit": "10's",
+    "mrp": 7.0,
+    "category": "Allergy"
+  },
+  {
+    "code": "4008",
+    "name": "Levofloxacin",
+    "strength": "500 mg",
+    "unit": "10's",
+    "mrp": 33.0,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "6001",
+    "name": "Levothyroxine Sodium",
+    "strength": "50 mcg",
+    "unit": "10's",
+    "mrp": 7.0,
+    "category": "Thyroid"
+  },
+  {
+    "code": "6002",
+    "name": "Levothyroxine Sodium",
+    "strength": "100 mcg",
+    "unit": "10's",
+    "mrp": 8.0,
+    "category": "Thyroid"
+  },
+  {
+    "code": "3004",
+    "name": "Losartan",
+    "strength": "50 mg",
+    "unit": "10's",
+    "mrp": 6.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "2001",
+    "name": "Metformin Hydrochloride",
+    "strength": "500 mg",
+    "unit": "10's",
+    "mrp": 5.15,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2002",
+    "name": "Metformin Hydrochloride (SR)",
+    "strength": "500 mg",
+    "unit": "10's",
+    "mrp": 8.85,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2003",
+    "name": "Metformin Hydrochloride (SR)",
+    "strength": "1000 mg",
+    "unit": "10's",
+    "mrp": 11.05,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "3006",
+    "name": "Metoprolol Succinate (ER)",
+    "strength": "50 mg",
+    "unit": "10's",
+    "mrp": 12.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "7005",
+    "name": "Montelukast + Levocetirizine",
+    "strength": "10 mg + 5 mg",
+    "unit": "10's",
+    "mrp": 42.8,
+    "category": "Respiratory"
+  },
+  {
+    "code": "7001",
+    "name": "Montelukast Sodium",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 15.0,
+    "category": "Respiratory"
+  },
+  {
+    "code": "1050",
+    "name": "Nimesulide",
+    "strength": "100 mg",
+    "unit": "10's",
+    "mrp": 4.1,
+    "category": "Analgesic"
+  },
+  {
+    "code": "4009",
+    "name": "Ofloxacin + Ornidazole",
+    "strength": "200 mg + 500 mg",
+    "unit": "10's",
+    "mrp": 27.5,
+    "category": "Antibiotic"
+  },
+  {
+    "code": "5002",
+    "name": "Omeprazole",
+    "strength": "20 mg",
+    "unit": "10's",
+    "mrp": 9.0,
+    "category": "Gastro"
+  },
+  {
+    "code": "5005",
+    "name": "Ondansetron",
+    "strength": "4 mg",
+    "unit": "10's",
+    "mrp": 6.0,
+    "category": "Gastro"
+  },
+  {
+    "code": "5001",
+    "name": "Pantoprazole",
+    "strength": "40 mg",
+    "unit": "10's",
+    "mrp": 10.0,
+    "category": "Gastro"
+  },
+  {
+    "code": "1005",
+    "name": "Paracetamol",
+    "strength": "500 mg",
+    "unit": "10's",
+    "mrp": 4.51,
+    "category": "Analgesic"
+  },
+  {
+    "code": "1010",
+    "name": "Paracetamol",
+    "strength": "650 mg",
+    "unit": "15's",
+    "mrp": 8.03,
+    "category": "Analgesic"
+  },
+  {
+    "code": "9104",
+    "name": "Paroxetine",
+    "strength": "20 mg",
+    "unit": "10's",
+    "mrp": 16.0,
+    "category": "Neuro"
+  },
+  {
+    "code": "2009",
+    "name": "Pioglitazone",
+    "strength": "15 mg",
+    "unit": "10's",
+    "mrp": 6.75,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "2010",
+    "name": "Pioglitazone",
+    "strength": "30 mg",
+    "unit": "10's",
+    "mrp": 10.69,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "5003",
+    "name": "Rabeprazole",
+    "strength": "20 mg",
+    "unit": "10's",
+    "mrp": 8.8,
+    "category": "Gastro"
+  },
+  {
+    "code": "3005",
+    "name": "Ramipril",
+    "strength": "5 mg",
+    "unit": "10's",
+    "mrp": 8.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "3010",
+    "name": "Rosuvastatin",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 9.5,
+    "category": "Cardiac"
+  },
+  {
+    "code": "7007",
+    "name": "Salbutamol",
+    "strength": "4 mg",
+    "unit": "10's",
+    "mrp": 2.0,
+    "category": "Respiratory"
+  },
+  {
+    "code": "7004",
+    "name": "Salbutamol Inhalation",
+    "strength": "100 mcg",
+    "unit": "200 MDI",
+    "mrp": 50.0,
+    "category": "Respiratory"
+  },
+  {
+    "code": "1055",
+    "name": "Serratiopeptidase",
+    "strength": "10 mg",
+    "unit": "10's",
+    "mrp": 8.9,
+    "category": "Analgesic"
+  },
+  {
+    "code": "9103",
+    "name": "Sertraline",
+    "strength": "25 mg",
+    "unit": "10's",
+    "mrp": 10.0,
+    "category": "Neuro"
+  },
+  {
+    "code": "3014",
+    "name": "Spironolactone",
+    "strength": "25 mg",
+    "unit": "10's",
+    "mrp": 8.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "9001",
+    "name": "Tamsulosin",
+    "strength": "0.4 mg",
+    "unit": "10's",
+    "mrp": 14.0,
+    "category": "Urology"
+  },
+  {
+    "code": "3003",
+    "name": "Telmisartan",
+    "strength": "40 mg",
+    "unit": "10's",
+    "mrp": 7.5,
+    "category": "Cardiac"
+  },
+  {
+    "code": "3015",
+    "name": "Telmisartan + Amlodipine",
+    "strength": "40 mg + 5 mg",
+    "unit": "10's",
+    "mrp": 14.0,
+    "category": "Cardiac"
+  },
+  {
+    "code": "2013",
+    "name": "Teneligliptin",
+    "strength": "20 mg",
+    "unit": "10's",
+    "mrp": 49.5,
+    "category": "Antidiabetic"
+  },
+  {
+    "code": "8002",
+    "name": "Vitamin B-Complex",
+    "strength": "B1 10mg + B2 10mg + B3 45mg + B5 50mg + B6 3mg + B12 15mcg",
+    "unit": "10's",
+    "mrp": 16.0,
+    "category": "Supplement"
+  },
+  {
+    "code": "8004",
+    "name": "Vitamin D3 (Cholecalciferol)",
+    "strength": "60000 IU",
+    "unit": "1's",
+    "mrp": 25.0,
+    "category": "Supplement"
+  }
+]

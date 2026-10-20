@@ -1,0 +1,159 @@
+/* ============================================
+   Generic Medicine Finder — Custom Styles
+   ============================================ */
+
+/* Smooth transitions for result display */
+#resultsSection {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#resultsSection.show {
+    display: block;
+    animation: fadeSlideUp 0.3s ease-out;
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Search input */
+.search-input::placeholder {
+    color: #9ca3af;
+}
+
+/* Suggestions dropdown */
+#suggestions {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+}
+
+#suggestions::-webkit-scrollbar {
+    width: 6px;
+}
+
+#suggestions::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 3px;
+}
+
+.suggestion-item {
+    cursor: pointer;
+    transition: background-color 0.1s;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover,
+.suggestion-item.highlighted {
+    background-color: #fff7ed;
+}
+
+.suggestion-item .highlight {
+    background-color: #fed7aa;
+    font-weight: 600;
+}
+
+/* Price cards */
+.price-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Savings card */
+.savings-card {
+    transition: transform 0.15s ease;
+}
+
+.savings-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Popular buttons */
+.popular-btn {
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.popular-btn:active {
+    transform: scale(0.95);
+}
+
+/* Loading animation */
+@keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 2s ease-in-out infinite;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+    #searchInput {
+        font-size: 16px; /* Prevent iOS zoom on focus */
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .price-card p.text-3xl {
+        font-size: 1.75rem;
+    }
+
+    .savings-card span.text-4xl {
+        font-size: 2rem;
+    }
+
+    .savings-card span.text-2xl {
+        font-size: 1.25rem;
+    }
+}
+
+/* Print styles for PDF */
+@media print {
+    header, footer, #searchContainer, #popularSearches, #langToggle {
+        display: none !important;
+    }
+
+    #resultsSection {
+        display: block !important;
+    }
+
+    #resultsCard {
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+    outline: 2px solid #f97316;
+    outline-offset: 2px;
+}
+
+/* No results state */
+#notFoundState.show {
+    display: block;
+    animation: fadeSlideUp 0.3s ease-out;
+}
+
+/* Scrollable suggestions on mobile */
+@media (max-width: 640px) {
+    #suggestions {
+        max-height: 60vh;
+    }
+}

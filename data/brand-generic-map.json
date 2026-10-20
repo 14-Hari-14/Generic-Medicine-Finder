@@ -1,0 +1,1154 @@
+[
+  {
+    "brand": "Aceclo Plus",
+    "salt": "Aceclofenac + Paracetamol",
+    "genericName": "Aceclofenac + Paracetamol",
+    "strength": "100 mg + 325 mg",
+    "brandMRP": 55.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Aldigesic SP",
+    "salt": "Aceclofenac + Paracetamol + Serratiopeptidase",
+    "genericName": "Aceclofenac + Paracetamol",
+    "strength": "100 mg + 325 mg + 15 mg",
+    "brandMRP": 65.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Alerid 5",
+    "salt": "Cetirizine",
+    "genericName": "Cetirizine",
+    "strength": "10 mg",
+    "brandMRP": 12.0,
+    "genericMRP": 5.5
+  },
+  {
+    "brand": "Allegra 120",
+    "salt": "Fexofenadine",
+    "genericName": "Fexofenadine",
+    "strength": "120 mg",
+    "brandMRP": 218.0,
+    "genericMRP": 24.0
+  },
+  {
+    "brand": "Alzine 120",
+    "salt": "Fexofenadine",
+    "genericName": "Fexofenadine",
+    "strength": "120 mg",
+    "brandMRP": 40.0,
+    "genericMRP": 24.0
+  },
+  {
+    "brand": "Amaryl 1",
+    "salt": "Glimepiride",
+    "genericName": "Glimepiride",
+    "strength": "1 mg",
+    "brandMRP": 65.0,
+    "genericMRP": 4.38
+  },
+  {
+    "brand": "Amaryl 2",
+    "salt": "Glimepiride",
+    "genericName": "Glimepiride",
+    "strength": "2 mg",
+    "brandMRP": 85.0,
+    "genericMRP": 5.05
+  },
+  {
+    "brand": "Amaryl M 1 Forte",
+    "salt": "Glimepiride + Metformin SR",
+    "genericName": "Glimepiride + Metformin SR",
+    "strength": "1 mg + 500 mg",
+    "brandMRP": 140.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Amlodac 5",
+    "salt": "Amlodipine",
+    "genericName": "Amlodipine",
+    "strength": "5 mg",
+    "brandMRP": 25.0,
+    "genericMRP": 3.0
+  },
+  {
+    "brand": "Amlokind 5",
+    "salt": "Amlodipine",
+    "genericName": "Amlodipine",
+    "strength": "5 mg",
+    "brandMRP": 42.0,
+    "genericMRP": 3.0
+  },
+  {
+    "brand": "Amoxy 500",
+    "salt": "Amoxicillin",
+    "genericName": "Amoxicillin",
+    "strength": "500 mg",
+    "brandMRP": 38.0,
+    "genericMRP": 26.26
+  },
+  {
+    "brand": "Asthalin 4",
+    "salt": "Salbutamol",
+    "genericName": "Salbutamol Inhalation",
+    "strength": "4 mg",
+    "brandMRP": 10.0,
+    "genericMRP": 50.0
+  },
+  {
+    "brand": "Asthalin Inhaler",
+    "salt": "Salbutamol",
+    "genericName": "Salbutamol Inhalation",
+    "strength": "100 mcg",
+    "brandMRP": 162.0,
+    "genericMRP": 50.0
+  },
+  {
+    "brand": "Atorlip 10",
+    "salt": "Atorvastatin",
+    "genericName": "Atorvastatin",
+    "strength": "10 mg",
+    "brandMRP": 49.0,
+    "genericMRP": 6.0
+  },
+  {
+    "brand": "Atorva 10",
+    "salt": "Atorvastatin",
+    "genericName": "Atorvastatin",
+    "strength": "10 mg",
+    "brandMRP": 78.0,
+    "genericMRP": 6.0
+  },
+  {
+    "brand": "Atorva 20",
+    "salt": "Atorvastatin",
+    "genericName": "Atorvastatin",
+    "strength": "20 mg",
+    "brandMRP": 120.0,
+    "genericMRP": 9.0
+  },
+  {
+    "brand": "Atorvast 10",
+    "salt": "Atorvastatin",
+    "genericName": "Atorvastatin",
+    "strength": "10 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 6.0
+  },
+  {
+    "brand": "Augmentin 625 Duo",
+    "salt": "Amoxicillin + Clavulanic Acid",
+    "genericName": "Amoxicillin + Clavulanic Acid",
+    "strength": "500 mg + 125 mg",
+    "brandMRP": 220.0,
+    "genericMRP": 52.25
+  },
+  {
+    "brand": "Azee 500",
+    "salt": "Azithromycin",
+    "genericName": "Azithromycin",
+    "strength": "500 mg",
+    "brandMRP": 95.0,
+    "genericMRP": 42.0
+  },
+  {
+    "brand": "Azithral 500",
+    "salt": "Azithromycin",
+    "genericName": "Azithromycin",
+    "strength": "500 mg",
+    "brandMRP": 132.0,
+    "genericMRP": 42.0
+  },
+  {
+    "brand": "Betaloc ZOK 50",
+    "salt": "Metoprolol Succinate ER",
+    "genericName": "Metoprolol Succinate (ER)",
+    "strength": "50 mg",
+    "brandMRP": 135.0,
+    "genericMRP": 12.0
+  },
+  {
+    "brand": "Bisoheart 5",
+    "salt": "Bisoprolol",
+    "genericName": "Bisoprolol",
+    "strength": "5 mg",
+    "brandMRP": 42.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Brufen 400",
+    "salt": "Ibuprofen",
+    "genericName": "Ibuprofen",
+    "strength": "400 mg",
+    "brandMRP": 28.0,
+    "genericMRP": 3.5
+  },
+  {
+    "brand": "Calcirol 60K",
+    "salt": "Cholecalciferol (Vitamin D3)",
+    "genericName": "Vitamin D3 (Cholecalciferol)",
+    "strength": "60000 IU",
+    "brandMRP": 60.0,
+    "genericMRP": 25.0
+  },
+  {
+    "brand": "Calcium Plus",
+    "salt": "Calcium + Vitamin D3",
+    "genericName": "Calcium + Vitamin D3",
+    "strength": "500 mg + 250 IU",
+    "brandMRP": 88.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Calpol 500",
+    "salt": "Paracetamol",
+    "genericName": "Paracetamol",
+    "strength": "500 mg",
+    "brandMRP": 18.0,
+    "genericMRP": 4.51
+  },
+  {
+    "brand": "Calpol 650",
+    "salt": "Paracetamol",
+    "genericName": "Paracetamol",
+    "strength": "650 mg",
+    "brandMRP": 30.0,
+    "genericMRP": 8.03
+  },
+  {
+    "brand": "Candesartan",
+    "salt": "Losartan",
+    "genericName": "Losartan",
+    "strength": "50 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 6.0
+  },
+  {
+    "brand": "Cardace 5",
+    "salt": "Ramipril",
+    "genericName": "Ramipril",
+    "strength": "5 mg",
+    "brandMRP": 85.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Cetzine 10",
+    "salt": "Cetirizine",
+    "genericName": "Cetirizine",
+    "strength": "10 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 5.5
+  },
+  {
+    "brand": "Cifran 500",
+    "salt": "Ciprofloxacin",
+    "genericName": "Ciprofloxacin",
+    "strength": "500 mg",
+    "brandMRP": 45.0,
+    "genericMRP": 20.0
+  },
+  {
+    "brand": "Cipcal 500",
+    "salt": "Calcium + Vitamin D3",
+    "genericName": "Calcium + Vitamin D3",
+    "strength": "500 mg + 250 IU",
+    "brandMRP": 78.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Ciplox 500",
+    "salt": "Ciprofloxacin",
+    "genericName": "Ciprofloxacin",
+    "strength": "500 mg",
+    "brandMRP": 48.0,
+    "genericMRP": 20.0
+  },
+  {
+    "brand": "Cizra 20",
+    "salt": "Omeprazole",
+    "genericName": "Omeprazole",
+    "strength": "20 mg",
+    "brandMRP": 22.0,
+    "genericMRP": 9.0
+  },
+  {
+    "brand": "Clavam 625",
+    "salt": "Amoxicillin + Clavulanic Acid",
+    "genericName": "Amoxicillin + Clavulanic Acid",
+    "strength": "500 mg + 125 mg",
+    "brandMRP": 145.0,
+    "genericMRP": 52.25
+  },
+  {
+    "brand": "Clopilet 75",
+    "salt": "Clopidogrel",
+    "genericName": "Clopidogrel",
+    "strength": "75 mg",
+    "brandMRP": 110.0,
+    "genericMRP": 11.0
+  },
+  {
+    "brand": "Combiflam",
+    "salt": "Ibuprofen + Paracetamol",
+    "genericName": "Ibuprofen + Paracetamol",
+    "strength": "400 mg + 325 mg",
+    "brandMRP": 52.0,
+    "genericMRP": 5.5
+  },
+  {
+    "brand": "Concor 5",
+    "salt": "Bisoprolol",
+    "genericName": "Bisoprolol",
+    "strength": "5 mg",
+    "brandMRP": 116.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Crocin 650",
+    "salt": "Paracetamol",
+    "genericName": "Paracetamol",
+    "strength": "650 mg",
+    "brandMRP": 28.0,
+    "genericMRP": 8.03
+  },
+  {
+    "brand": "Deplatt 75",
+    "salt": "Clopidogrel",
+    "genericName": "Clopidogrel",
+    "strength": "75 mg",
+    "brandMRP": 85.0,
+    "genericMRP": 11.0
+  },
+  {
+    "brand": "Diamicron 80",
+    "salt": "Gliclazide",
+    "genericName": "Gliclazide",
+    "strength": "80 mg",
+    "brandMRP": 60.0,
+    "genericMRP": 20.25
+  },
+  {
+    "brand": "Diapride 1",
+    "salt": "Glimepiride",
+    "genericName": "Glimepiride",
+    "strength": "1 mg",
+    "brandMRP": 30.0,
+    "genericMRP": 4.38
+  },
+  {
+    "brand": "Diapride 2",
+    "salt": "Glimepiride",
+    "genericName": "Glimepiride",
+    "strength": "2 mg",
+    "brandMRP": 40.0,
+    "genericMRP": 5.05
+  },
+  {
+    "brand": "Diclomol 50",
+    "salt": "Diclofenac Sodium",
+    "genericName": "Diclofenac Sodium",
+    "strength": "50 mg",
+    "brandMRP": 12.0,
+    "genericMRP": 2.9
+  },
+  {
+    "brand": "Disprin 75",
+    "salt": "Aspirin",
+    "genericName": "Aspirin (Low Dose)",
+    "strength": "75 mg",
+    "brandMRP": 6.0,
+    "genericMRP": 3.5
+  },
+  {
+    "brand": "Dolo 500",
+    "salt": "Paracetamol",
+    "genericName": "Paracetamol",
+    "strength": "500 mg",
+    "brandMRP": 22.0,
+    "genericMRP": 4.51
+  },
+  {
+    "brand": "Dolo 650",
+    "salt": "Paracetamol",
+    "genericName": "Paracetamol",
+    "strength": "650 mg",
+    "brandMRP": 34.0,
+    "genericMRP": 8.03
+  },
+  {
+    "brand": "Domperi 10",
+    "salt": "Domperidone",
+    "genericName": "Domperidone",
+    "strength": "10 mg",
+    "brandMRP": 12.0,
+    "genericMRP": 4.4
+  },
+  {
+    "brand": "Domstal 10",
+    "salt": "Domperidone",
+    "genericName": "Domperidone",
+    "strength": "10 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 4.4
+  },
+  {
+    "brand": "Ecosprin 150",
+    "salt": "Aspirin",
+    "genericName": "Aspirin (Gastro-resistant)",
+    "strength": "150 mg",
+    "brandMRP": 8.0,
+    "genericMRP": 2.7
+  },
+  {
+    "brand": "Ecosprin 75",
+    "salt": "Aspirin",
+    "genericName": "Aspirin (Low Dose)",
+    "strength": "75 mg",
+    "brandMRP": 5.5,
+    "genericMRP": 3.5
+  },
+  {
+    "brand": "Eltroxin 100",
+    "salt": "Levothyroxine Sodium",
+    "genericName": "Levothyroxine Sodium",
+    "strength": "100 mcg",
+    "brandMRP": 28.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Eltroxin 50",
+    "salt": "Levothyroxine Sodium",
+    "genericName": "Levothyroxine Sodium",
+    "strength": "50 mcg",
+    "brandMRP": 25.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Emeset 4",
+    "salt": "Ondansetron",
+    "genericName": "Ondansetron",
+    "strength": "4 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 6.0
+  },
+  {
+    "brand": "Etoshine 120",
+    "salt": "Etoricoxib",
+    "genericName": "Etoricoxib",
+    "strength": "120 mg",
+    "brandMRP": 150.0,
+    "genericMRP": 33.0
+  },
+  {
+    "brand": "Etoshine 90",
+    "salt": "Etoricoxib",
+    "genericName": "Etoricoxib",
+    "strength": "90 mg",
+    "brandMRP": 120.0,
+    "genericMRP": 25.0
+  },
+  {
+    "brand": "Fexo 120",
+    "salt": "Fexofenadine",
+    "genericName": "Fexofenadine",
+    "strength": "120 mg",
+    "brandMRP": 58.0,
+    "genericMRP": 24.0
+  },
+  {
+    "brand": "Finax 5",
+    "salt": "Finasteride",
+    "genericName": "Finasteride",
+    "strength": "5 mg",
+    "brandMRP": 155.0,
+    "genericMRP": 25.0
+  },
+  {
+    "brand": "Flexon",
+    "salt": "Ibuprofen + Paracetamol",
+    "genericName": "Ibuprofen + Paracetamol",
+    "strength": "400 mg + 325 mg",
+    "brandMRP": 44.0,
+    "genericMRP": 5.5
+  },
+  {
+    "brand": "Folic Acid 5mg",
+    "salt": "Folic Acid",
+    "genericName": "Folic Acid",
+    "strength": "5 mg",
+    "brandMRP": 8.0,
+    "genericMRP": 4.4
+  },
+  {
+    "brand": "Gliben 5",
+    "salt": "Glibenclamide",
+    "genericName": "Glibenclamide",
+    "strength": "5 mg",
+    "brandMRP": 8.0,
+    "genericMRP": 4.05
+  },
+  {
+    "brand": "Glizid 80",
+    "salt": "Gliclazide",
+    "genericName": "Gliclazide",
+    "strength": "80 mg",
+    "brandMRP": 30.0,
+    "genericMRP": 20.25
+  },
+  {
+    "brand": "Gluformin 500",
+    "salt": "Metformin Hydrochloride",
+    "genericName": "Metformin Hydrochloride",
+    "strength": "500 mg",
+    "brandMRP": 20.0,
+    "genericMRP": 5.15
+  },
+  {
+    "brand": "Glyciphage 500",
+    "salt": "Metformin Hydrochloride",
+    "genericName": "Metformin Hydrochloride",
+    "strength": "500 mg",
+    "brandMRP": 22.0,
+    "genericMRP": 5.15
+  },
+  {
+    "brand": "Glyciphage SR 1000",
+    "salt": "Metformin Hydrochloride SR",
+    "genericName": "Metformin Hydrochloride (SR)",
+    "strength": "1000 mg",
+    "brandMRP": 42.0,
+    "genericMRP": 11.05
+  },
+  {
+    "brand": "Glyciphage SR 500",
+    "salt": "Metformin Hydrochloride SR",
+    "genericName": "Metformin Hydrochloride (SR)",
+    "strength": "500 mg",
+    "brandMRP": 26.0,
+    "genericMRP": 8.85
+  },
+  {
+    "brand": "Glycomet 500",
+    "salt": "Metformin Hydrochloride",
+    "genericName": "Metformin Hydrochloride",
+    "strength": "500 mg",
+    "brandMRP": 24.0,
+    "genericMRP": 5.15
+  },
+  {
+    "brand": "Glycomet 850",
+    "salt": "Metformin Hydrochloride",
+    "genericName": "Metformin Hydrochloride",
+    "strength": "850 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 5.15
+  },
+  {
+    "brand": "Glycomet SR 1000",
+    "salt": "Metformin Hydrochloride SR",
+    "genericName": "Metformin Hydrochloride (SR)",
+    "strength": "1000 mg",
+    "brandMRP": 45.0,
+    "genericMRP": 11.05
+  },
+  {
+    "brand": "Glycomet SR 500",
+    "salt": "Metformin Hydrochloride SR",
+    "genericName": "Metformin Hydrochloride (SR)",
+    "strength": "500 mg",
+    "brandMRP": 28.0,
+    "genericMRP": 8.85
+  },
+  {
+    "brand": "Glycomet-GP 1 Forte",
+    "salt": "Glimepiride + Metformin SR",
+    "genericName": "Glimepiride + Metformin SR",
+    "strength": "1 mg + 500 mg",
+    "brandMRP": 135.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Glycomet-GP 2 Forte",
+    "salt": "Glimepiride + Metformin SR",
+    "genericName": "Glimepiride + Metformin SR",
+    "strength": "2 mg + 500 mg",
+    "brandMRP": 150.0,
+    "genericMRP": 16.9
+  },
+  {
+    "brand": "Ibugesic Plus",
+    "salt": "Ibuprofen + Paracetamol",
+    "genericName": "Ibuprofen + Paracetamol",
+    "strength": "400 mg + 325 mg",
+    "brandMRP": 38.0,
+    "genericMRP": 5.5
+  },
+  {
+    "brand": "Lasix 40",
+    "salt": "Furosemide",
+    "genericName": "Furosemide",
+    "strength": "40 mg",
+    "brandMRP": 15.0,
+    "genericMRP": 4.0
+  },
+  {
+    "brand": "Lecope 5",
+    "salt": "Levocetirizine",
+    "genericName": "Levocetirizine",
+    "strength": "5 mg",
+    "brandMRP": 15.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Levoflox 500",
+    "salt": "Levofloxacin",
+    "genericName": "Levofloxacin",
+    "strength": "500 mg",
+    "brandMRP": 110.0,
+    "genericMRP": 33.0
+  },
+  {
+    "brand": "Lobeta 5",
+    "salt": "Bisoprolol",
+    "genericName": "Bisoprolol",
+    "strength": "5 mg",
+    "brandMRP": 26.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Losar 50",
+    "salt": "Losartan",
+    "genericName": "Losartan",
+    "strength": "50 mg",
+    "brandMRP": 28.0,
+    "genericMRP": 6.0
+  },
+  {
+    "brand": "Mahacef 200",
+    "salt": "Cefixime",
+    "genericName": "Cefixime",
+    "strength": "200 mg",
+    "brandMRP": 75.0,
+    "genericMRP": 41.5
+  },
+  {
+    "brand": "Metfor 500",
+    "salt": "Metformin Hydrochloride",
+    "genericName": "Metformin Hydrochloride",
+    "strength": "500 mg",
+    "brandMRP": 18.0,
+    "genericMRP": 5.15
+  },
+  {
+    "brand": "Metolar XR 50",
+    "salt": "Metoprolol Succinate ER",
+    "genericName": "Metoprolol Succinate (ER)",
+    "strength": "50 mg",
+    "brandMRP": 98.0,
+    "genericMRP": 12.0
+  },
+  {
+    "brand": "Montair 10",
+    "salt": "Montelukast",
+    "genericName": "Montelukast Sodium",
+    "strength": "10 mg",
+    "brandMRP": 185.0,
+    "genericMRP": 15.0
+  },
+  {
+    "brand": "Montair LC",
+    "salt": "Montelukast + Levocetirizine",
+    "genericName": "Montelukast + Levocetirizine",
+    "strength": "10 mg + 5 mg",
+    "brandMRP": 210.0,
+    "genericMRP": 42.8
+  },
+  {
+    "brand": "Montek LC",
+    "salt": "Montelukast + Levocetirizine",
+    "genericName": "Montelukast + Levocetirizine",
+    "strength": "10 mg + 5 mg",
+    "brandMRP": 195.0,
+    "genericMRP": 42.8
+  },
+  {
+    "brand": "Moxikind CV 625",
+    "salt": "Amoxicillin + Clavulanic Acid",
+    "genericName": "Amoxicillin + Clavulanic Acid",
+    "strength": "500 mg + 125 mg",
+    "brandMRP": 155.0,
+    "genericMRP": 52.25
+  },
+  {
+    "brand": "Neurobion Forte",
+    "salt": "Vitamin B-Complex",
+    "genericName": "Vitamin B-Complex",
+    "strength": "Various",
+    "brandMRP": 42.0,
+    "genericMRP": 16.0
+  },
+  {
+    "brand": "Nexit 20",
+    "salt": "Escitalopram",
+    "genericName": "Escitalopram",
+    "strength": "10 mg",
+    "brandMRP": 98.0,
+    "genericMRP": 12.95
+  },
+  {
+    "brand": "Nimulid 100",
+    "salt": "Nimesulide",
+    "genericName": "Nimesulide",
+    "strength": "100 mg",
+    "brandMRP": 28.0,
+    "genericMRP": 4.1
+  },
+  {
+    "brand": "Nise 100",
+    "salt": "Nimesulide",
+    "genericName": "Nimesulide",
+    "strength": "100 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 4.1
+  },
+  {
+    "brand": "Nise DT",
+    "salt": "Nimesulide",
+    "genericName": "Nimesulide",
+    "strength": "100 mg",
+    "brandMRP": 30.0,
+    "genericMRP": 4.1
+  },
+  {
+    "brand": "Nurokind OD",
+    "salt": "Vitamin B-Complex",
+    "genericName": "Vitamin B-Complex",
+    "strength": "Various",
+    "brandMRP": 35.0,
+    "genericMRP": 16.0
+  },
+  {
+    "brand": "O2",
+    "salt": "Ofloxacin + Ornidazole",
+    "genericName": "Ofloxacin + Ornidazole",
+    "strength": "200 mg + 500 mg",
+    "brandMRP": 145.0,
+    "genericMRP": 27.5
+  },
+  {
+    "brand": "Okamet 500",
+    "salt": "Metformin Hydrochloride",
+    "genericName": "Metformin Hydrochloride",
+    "strength": "500 mg",
+    "brandMRP": 20.0,
+    "genericMRP": 5.15
+  },
+  {
+    "brand": "Omeol 20",
+    "salt": "Omeprazole",
+    "genericName": "Omeprazole",
+    "strength": "20 mg",
+    "brandMRP": 25.0,
+    "genericMRP": 9.0
+  },
+  {
+    "brand": "Omez 20",
+    "salt": "Omeprazole",
+    "genericName": "Omeprazole",
+    "strength": "20 mg",
+    "brandMRP": 65.0,
+    "genericMRP": 9.0
+  },
+  {
+    "brand": "Ondem MD 4",
+    "salt": "Ondansetron",
+    "genericName": "Ondansetron",
+    "strength": "4 mg",
+    "brandMRP": 56.0,
+    "genericMRP": 6.0
+  },
+  {
+    "brand": "Pacimol 650",
+    "salt": "Paracetamol",
+    "genericName": "Paracetamol",
+    "strength": "650 mg",
+    "brandMRP": 25.0,
+    "genericMRP": 8.03
+  },
+  {
+    "brand": "Pan 40",
+    "salt": "Pantoprazole",
+    "genericName": "Pantoprazole",
+    "strength": "40 mg",
+    "brandMRP": 148.0,
+    "genericMRP": 10.0
+  },
+  {
+    "brand": "Pantocid 40",
+    "salt": "Pantoprazole",
+    "genericName": "Pantoprazole",
+    "strength": "40 mg",
+    "brandMRP": 155.0,
+    "genericMRP": 10.0
+  },
+  {
+    "brand": "Pantodac 40",
+    "salt": "Pantoprazole",
+    "genericName": "Pantoprazole",
+    "strength": "40 mg",
+    "brandMRP": 95.0,
+    "genericMRP": 10.0
+  },
+  {
+    "brand": "Paxil 20",
+    "salt": "Paroxetine",
+    "genericName": "Paroxetine",
+    "strength": "20 mg",
+    "brandMRP": 185.0,
+    "genericMRP": 16.0
+  },
+  {
+    "brand": "Pioglar 15",
+    "salt": "Pioglitazone",
+    "genericName": "Pioglitazone",
+    "strength": "15 mg",
+    "brandMRP": 45.0,
+    "genericMRP": 6.75
+  },
+  {
+    "brand": "Pioglar 30",
+    "salt": "Pioglitazone",
+    "genericName": "Pioglitazone",
+    "strength": "30 mg",
+    "brandMRP": 65.0,
+    "genericMRP": 10.69
+  },
+  {
+    "brand": "Pioz 15",
+    "salt": "Pioglitazone",
+    "genericName": "Pioglitazone",
+    "strength": "15 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 6.75
+  },
+  {
+    "brand": "Plavix 75",
+    "salt": "Clopidogrel",
+    "genericName": "Clopidogrel",
+    "strength": "75 mg",
+    "brandMRP": 240.0,
+    "genericMRP": 11.0
+  },
+  {
+    "brand": "Rablet 20",
+    "salt": "Rabeprazole",
+    "genericName": "Rabeprazole",
+    "strength": "20 mg",
+    "brandMRP": 75.0,
+    "genericMRP": 8.8
+  },
+  {
+    "brand": "Ramipril 5",
+    "salt": "Ramipril",
+    "genericName": "Ramipril",
+    "strength": "5 mg",
+    "brandMRP": 30.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Ramistar 5",
+    "salt": "Ramipril",
+    "genericName": "Ramipril",
+    "strength": "5 mg",
+    "brandMRP": 45.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Razo 20",
+    "salt": "Rabeprazole",
+    "genericName": "Rabeprazole",
+    "strength": "20 mg",
+    "brandMRP": 40.0,
+    "genericMRP": 8.8
+  },
+  {
+    "brand": "Reclide 80",
+    "salt": "Gliclazide",
+    "genericName": "Gliclazide",
+    "strength": "80 mg",
+    "brandMRP": 35.0,
+    "genericMRP": 20.25
+  },
+  {
+    "brand": "Restyl 25",
+    "salt": "Sertraline",
+    "genericName": "Sertraline",
+    "strength": "25 mg",
+    "brandMRP": 40.0,
+    "genericMRP": 10.0
+  },
+  {
+    "brand": "Rosulip 10",
+    "salt": "Rosuvastatin",
+    "genericName": "Rosuvastatin",
+    "strength": "10 mg",
+    "brandMRP": 60.0,
+    "genericMRP": 9.5
+  },
+  {
+    "brand": "Rosuvas 10",
+    "salt": "Rosuvastatin",
+    "genericName": "Rosuvastatin",
+    "strength": "10 mg",
+    "brandMRP": 175.0,
+    "genericMRP": 9.5
+  },
+  {
+    "brand": "Rozavel 10",
+    "salt": "Rosuvastatin",
+    "genericName": "Rosuvastatin",
+    "strength": "10 mg",
+    "brandMRP": 95.0,
+    "genericMRP": 9.5
+  },
+  {
+    "brand": "Shelcal 500",
+    "salt": "Calcium + Vitamin D3",
+    "genericName": "Calcium + Vitamin D3",
+    "strength": "500 mg + 250 IU",
+    "brandMRP": 134.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Stamlo 10",
+    "salt": "Amlodipine",
+    "genericName": "Amlodipine",
+    "strength": "10 mg",
+    "brandMRP": 74.0,
+    "genericMRP": 5.0
+  },
+  {
+    "brand": "Stamlo 5",
+    "salt": "Amlodipine",
+    "genericName": "Amlodipine",
+    "strength": "5 mg",
+    "brandMRP": 58.0,
+    "genericMRP": 3.0
+  },
+  {
+    "brand": "Taxim O 200",
+    "salt": "Cefixime",
+    "genericName": "Cefixime",
+    "strength": "200 mg",
+    "brandMRP": 118.0,
+    "genericMRP": 41.5
+  },
+  {
+    "brand": "Telekast L",
+    "salt": "Montelukast + Levocetirizine",
+    "genericName": "Montelukast + Levocetirizine",
+    "strength": "10 mg + 5 mg",
+    "brandMRP": 140.0,
+    "genericMRP": 42.8
+  },
+  {
+    "brand": "Telma 40",
+    "salt": "Telmisartan",
+    "genericName": "Telmisartan",
+    "strength": "40 mg",
+    "brandMRP": 92.0,
+    "genericMRP": 7.5
+  },
+  {
+    "brand": "Telma 80",
+    "salt": "Telmisartan",
+    "genericName": "Telmisartan",
+    "strength": "80 mg",
+    "brandMRP": 120.0,
+    "genericMRP": 7.5
+  },
+  {
+    "brand": "Telma-AM",
+    "salt": "Telmisartan + Amlodipine",
+    "genericName": "Telmisartan + Amlodipine",
+    "strength": "40 mg + 5 mg",
+    "brandMRP": 185.0,
+    "genericMRP": 14.0
+  },
+  {
+    "brand": "Telmikind 40",
+    "salt": "Telmisartan",
+    "genericName": "Telmisartan",
+    "strength": "40 mg",
+    "brandMRP": 38.0,
+    "genericMRP": 7.5
+  },
+  {
+    "brand": "Telmikind-AM",
+    "salt": "Telmisartan + Amlodipine",
+    "genericName": "Telmisartan + Amlodipine",
+    "strength": "40 mg + 5 mg",
+    "brandMRP": 65.0,
+    "genericMRP": 14.0
+  },
+  {
+    "brand": "Telsartan 40",
+    "salt": "Telmisartan",
+    "genericName": "Telmisartan",
+    "strength": "40 mg",
+    "brandMRP": 45.0,
+    "genericMRP": 7.5
+  },
+  {
+    "brand": "Telvas 40",
+    "salt": "Telmisartan",
+    "genericName": "Telmisartan",
+    "strength": "40 mg",
+    "brandMRP": 75.0,
+    "genericMRP": 7.5
+  },
+  {
+    "brand": "Teniva 20",
+    "salt": "Teneligliptin",
+    "genericName": "Teneligliptin",
+    "strength": "20 mg",
+    "brandMRP": 145.0,
+    "genericMRP": 49.5
+  },
+  {
+    "brand": "Thyronorm 100",
+    "salt": "Levothyroxine Sodium",
+    "genericName": "Levothyroxine Sodium",
+    "strength": "100 mcg",
+    "brandMRP": 130.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Thyronorm 50",
+    "salt": "Levothyroxine Sodium",
+    "genericName": "Levothyroxine Sodium",
+    "strength": "50 mcg",
+    "brandMRP": 120.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Uprise D3 60K",
+    "salt": "Cholecalciferol (Vitamin D3)",
+    "genericName": "Vitamin D3 (Cholecalciferol)",
+    "strength": "60000 IU",
+    "brandMRP": 290.0,
+    "genericMRP": 25.0
+  },
+  {
+    "brand": "Urimax 0.4",
+    "salt": "Tamsulosin",
+    "genericName": "Tamsulosin",
+    "strength": "0.4 mg",
+    "brandMRP": 155.0,
+    "genericMRP": 14.0
+  },
+  {
+    "brand": "Uroalpha 0.4",
+    "salt": "Tamsulosin",
+    "genericName": "Tamsulosin",
+    "strength": "0.4 mg",
+    "brandMRP": 85.0,
+    "genericMRP": 14.0
+  },
+  {
+    "brand": "Voveran 50",
+    "salt": "Diclofenac Sodium",
+    "genericName": "Diclofenac Sodium",
+    "strength": "50 mg",
+    "brandMRP": 22.0,
+    "genericMRP": 2.9
+  },
+  {
+    "brand": "Voveran SR 100",
+    "salt": "Diclofenac Sodium SR",
+    "genericName": "Diclofenac Sodium (SR)",
+    "strength": "100 mg",
+    "brandMRP": 165.0,
+    "genericMRP": 6.12
+  },
+  {
+    "brand": "Zady 500",
+    "salt": "Azithromycin",
+    "genericName": "Azithromycin",
+    "strength": "500 mg",
+    "brandMRP": 78.0,
+    "genericMRP": 42.0
+  },
+  {
+    "brand": "Zenflox OZ",
+    "salt": "Ofloxacin + Ornidazole",
+    "genericName": "Ofloxacin + Ornidazole",
+    "strength": "200 mg + 500 mg",
+    "brandMRP": 95.0,
+    "genericMRP": 27.5
+  },
+  {
+    "brand": "Zerodol P",
+    "salt": "Aceclofenac + Paracetamol",
+    "genericName": "Aceclofenac + Paracetamol",
+    "strength": "100 mg + 325 mg",
+    "brandMRP": 88.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Zerodol SP",
+    "salt": "Aceclofenac + Paracetamol + Serratiopeptidase",
+    "genericName": "Aceclofenac + Paracetamol",
+    "strength": "100 mg + 325 mg + 15 mg",
+    "brandMRP": 128.0,
+    "genericMRP": 8.0
+  },
+  {
+    "brand": "Zifi 200",
+    "salt": "Cefixime",
+    "genericName": "Cefixime",
+    "strength": "200 mg",
+    "brandMRP": 110.0,
+    "genericMRP": 41.5
+  },
+  {
+    "brand": "Zithrox 250",
+    "salt": "Azithromycin",
+    "genericName": "Azithromycin",
+    "strength": "250 mg",
+    "brandMRP": 72.0,
+    "genericMRP": 40.0
+  },
+  {
+    "brand": "Zoryl 1",
+    "salt": "Glimepiride",
+    "genericName": "Glimepiride",
+    "strength": "1 mg",
+    "brandMRP": 28.0,
+    "genericMRP": 4.38
+  },
+  {
+    "brand": "Zoryl 2",
+    "salt": "Glimepiride",
+    "genericName": "Glimepiride",
+    "strength": "2 mg",
+    "brandMRP": 36.0,
+    "genericMRP": 5.05
+  },
+  {
+    "brand": "Zoryl M 1",
+    "salt": "Glimepiride + Metformin SR",
+    "genericName": "Glimepiride + Metformin SR",
+    "strength": "1 mg + 500 mg",
+    "brandMRP": 65.0,
+    "genericMRP": 7.0
+  },
+  {
+    "brand": "Zoryl M 2",
+    "salt": "Glimepiride + Metformin SR",
+    "genericName": "Glimepiride + Metformin SR",
+    "strength": "2 mg + 500 mg",
+    "brandMRP": 78.0,
+    "genericMRP": 16.9
+  }
+]
