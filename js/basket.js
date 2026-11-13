@@ -194,11 +194,21 @@
     }
 
     function shareOnWhatsApp(text) {
-        window.open(
-            "https://wa.me/?text=" + encodeURIComponent(text),
-            "_blank",
-            "noopener,noreferrer"
-        );
+        // WhatsApp needs no API — its official free web deep link carries the
+        // message in the URL. We link straight to api.whatsapp.com/send (the
+        // target wa.me redirects to anyway) because wa.me's own redirect
+        // corrupts multibyte characters (emoji become ). We trigger a real
+        // anchor click (not window.open) so popup-blockers can't ignore it:
+        // desktop opens WhatsApp Web, phones open the installed app.
+        const url = "https://api.whatsapp.com/send/?text=" + encodeURIComponent(text);
+        const a = document.createElement("a");
+        a.href = url;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     }
 
     // ===== UI: FAB (floating button) =====

@@ -188,19 +188,27 @@ function applyTranslations() {
     // Text content (plain text)
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
-        el.textContent = tSafe(key);
+        if (!key) return;
+        const text = tSafe(key);
+        // Never write a raw key to the page: if the translation is missing,
+        // leave the pretty English fallback already present in the HTML.
+        if (text !== key) el.textContent = text;
     });
 
     // HTML content (supports <strong>, <em>, etc.)
     document.querySelectorAll("[data-i18n-html]").forEach(el => {
         const key = el.getAttribute("data-i18n-html");
-        el.innerHTML = tSafe(key);
+        if (!key) return;
+        const text = tSafe(key);
+        if (text !== key) el.innerHTML = text;
     });
 
     // Placeholders
     document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
         const key = el.getAttribute("data-i18n-placeholder");
-        el.placeholder = tSafe(key);
+        if (!key) return;
+        const text = tSafe(key);
+        if (text !== key) el.placeholder = text;
     });
 
     // Update HTML lang attribute

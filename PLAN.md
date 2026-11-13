@@ -149,7 +149,7 @@ Step 4: Convert both CSVs to JSON for the frontend
 │                                                 │
 │  🏥 Locate nearest Janaushadhi Kendra          │
 │  ───────────────────────────────────────        │
-│  → https://janaushadhi.gov.in/kendraSearch.aspx │
+│  → https://www.janaushadhi.gov.in/locate-kendra │
 │                                                 │
 │  📋 Disclaimer: Consult your doctor before      │
 │  switching. These are the same salt compounds.  │
