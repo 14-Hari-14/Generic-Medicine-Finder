@@ -12,9 +12,15 @@ A zero-nonsense search engine that helps Indian patients find **cheaper generic 
   - Active salt / composition (e.g., Metformin 500mg)
   - Branded MRP vs. **Janaushadhi price**
   - Exact **₹ and % savings** (per pack, monthly, yearly)
-- **Download a comparison PDF** to show your doctor/pharmacist
-- **Link to nearest Janaushadhi Kendra** locator
+- **🧭 Browse by condition** — Diabetes, Heart/BP, Pain, Acidity, Asthma, Thyroid, etc. See the commonly prescribed medicines and their generic prices *before* your doctor visit
+- **🧺 Medicine list (basket)** — add all your family's medicines, set how many tablets/day each takes, and see the **total monthly + yearly savings** across everything
+- **💬 WhatsApp share** — one-tap summary of a single medicine or the whole list, to send to your doctor/pharmacist/family
+- **📅 Regimen calculator** — tell it how many tablets/day you take and savings are recalculated for *your* actual dosage
+- **💰 Real-world comparisons** — e.g. "≈ 2 LPG refills a year" so savings feel tangible
+- **📄 Download a comparison PDF** to show your doctor/pharmacist
+- **📍 Link to nearest Janaushadhi Kendra** locator
 - **Hindi language toggle** (UI in हिंदी/English — brand names stay in English, as on prescriptions)
+- Everything you add to your list is saved on the device (localStorage) and survives page reloads
 - Works on any device, even slow 2G connections
 
 ---
@@ -57,11 +63,12 @@ No dependencies, no install, no build step. Just serve the folder.
 ## Project Structure
 
 ```
-├── index.html               # Single-page app (search + results + PDF button)
+├── index.html               # Single-page app (search, conditions, basket, PDF)
 ├── css/
 │   └── style.css            # Custom styles on top of Tailwind
 ├── js/
-│   ├── app.js               # Core logic: search, render, PDF
+│   ├── app.js               # Search, result rendering, condition browser
+│   ├── basket.js            # Medicine list: savings calculator, drawer, WhatsApp share
 │   └── i18n.js              # English/Hindi translation system
 ├── data/                    # GENERATED — don't edit by hand
 │   ├── brands.json          # Brand → salt, MRP, savings (the search index)
@@ -71,6 +78,7 @@ No dependencies, no install, no build step. Just serve the folder.
 │   └── medicines.db         # GENERATED — SQLite backup for future use
 ├── scripts/                 # Data pipeline (the source of truth)
 │   ├── build-database.py    # CSV → SQLite → JSON exporter
+│   ├── add-medicine.py      # One-command helper to add medicines
 │   ├── medicines.csv        # EDIT THIS to add/update medicines
 │   ├── manual-mappings.json # Manual brand→generic overrides
 │   └── parse-pmbjp-pdf.py   # (WIP) Official PDF parser
@@ -144,9 +152,15 @@ python3 -m http.server 8080
 #  - Search "Glycomet" → expect Glycomet 500, SR 500, SR 1000 results
 #  - Search "glycmet" (typo) → fuzzy match should still find it
 #  - Search "xyzmed" → should show "not found" + similar suggestions
-#  - Click हिंदी → UI switches to Devanagari
+#  - Click a condition chip (e.g. Diabetes) → list of medicines + savings
+#  - Click "Add to List" → floating 🧺 button appears with count
+#  - Change "tablets/day" on a result or in the list → totals update
+#  - Share list on WhatsApp → pre-filled summary opens
+#  - Click हिंदी → UI switches to Devanagari, list & condition views follow
 #  - Download PDF → verify layout & numbers
 ```
+
+Automatic tests live outside the repo (`/tmp/opencode/test-features.js`, `test-mobile.js`) and run with Playwright's headless Firefox.
 
 ---
 

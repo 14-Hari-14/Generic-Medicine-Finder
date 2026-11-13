@@ -157,3 +157,94 @@
         max-height: 60vh;
     }
 }
+
+/* ============================================
+   New: Basket, condition chips, dosage, toast
+   ============================================ */
+
+/* Dosage stepper buttons */
+.dosage-btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db;
+    color: #4b5563;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.dosage-btn:hover {
+    background: #fff7ed;
+    border-color: #fdba74;
+    color: #ea580c;
+}
+
+.dosage-btn:active {
+    transform: scale(0.92);
+}
+
+/* Condition chips */
+.condition-chip {
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.condition-chip:hover {
+    transform: translateY(-1px);
+}
+
+.condition-chip:active {
+    transform: scale(0.96);
+}
+
+/* Basket drawer: slide-in handled by Tailwind classes,
+   but we set the base position so translate works correctly */
+#basketDrawer {
+    will-change: transform;
+}
+
+#basketOverlay.hidden {
+    display: none;
+}
+
+#basketOverlay:not(.hidden) {
+    display: block;
+}
+
+/* Toast */
+.toast {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    max-width: 90vw;
+    text-align: center;
+}
+
+.toast.toast-show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* Condition list rows */
+#conditionView.show {
+    display: block;
+    animation: fadeSlideUp 0.3s ease-out;
+}
+
+/* Print styles: hide floating UI on print */
+@media print {
+    #basketFab,
+    #basketDrawer,
+    #basketOverlay,
+    #toast {
+        display: none !important;
+    }
+}

@@ -111,6 +111,15 @@
 </div>
 </section>
 
+<!-- ===== CONDITION EXPLORER ===== -->
+<section id="conditionsSection" class="mb-8">
+    <div class="text-center mb-4">
+        <h3 class="text-xl font-bold text-gray-800" data-i18n="conditionsTitle">🧭 Browse by Condition</h3>
+        <p class="text-sm text-gray-500 mt-1" data-i18n="conditionsSubtitle">See what your condition's medicines cost — branded vs Janaushadhi — before your next doctor visit</p>
+    </div>
+    <div id="conditionChips" class="flex flex-wrap justify-center gap-2"></div>
+</section>
+
 <!-- ===== DISCLAIMER BANNER (visible on first load) ===== -->
 <div id="disclaimerBanner" class="max-w-4xl mx-auto px-4 mb-8">
     <div class="relative bg-amber-50 border-2 border-amber-300 rounded-xl p-4 sm:p-5 shadow-sm">
@@ -207,6 +216,22 @@
                     <span class="text-4xl font-black text-green-600" id="resultSavingsPct">0%</span>
                     <span class="text-2xl font-bold text-green-700">₹<span id="resultSavingsAmt">0</span>/pack</span>
                 </div>
+                <p class="text-xs text-gray-500 mt-1" id="resultPerTab">—</p>
+
+                <!-- Regimen stepper -->
+                <div class="mt-4 pt-4 border-t border-orange-200 flex flex-wrap items-center justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-sm font-semibold text-gray-700" data-i18n="tabsPerDay">How many tablets/day?</p>
+                        <p class="text-xs text-gray-400" id="resultPackNote">—</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <button id="tabsMinus" class="dosage-btn" aria-label="Decrease tablets per day">−</button>
+                        <span id="tabsValue" class="w-10 text-center font-bold text-lg text-gray-800">1</span>
+                        <button id="tabsPlus" class="dosage-btn" aria-label="Increase tablets per day">+</button>
+                        <span class="text-xs text-gray-500 ml-1" data-i18n="tabsPerDayShort">tabs/day</span>
+                    </div>
+                </div>
+
                 <div class="grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-orange-200">
                     <div>
                         <p class="text-xs text-gray-500" data-i18n="monthlySavings">📅 Monthly Savings</p>
@@ -217,22 +242,108 @@
                         <p class="text-lg font-bold text-gray-800">₹<span id="resultYearlySavings">0</span></p>
                     </div>
                 </div>
+                <p class="text-xs font-medium text-green-700 mt-2" id="resultAnchor">—</p>
             </div>
 
             <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row gap-3">
-                <button id="downloadPDFBtn"
-                class="flex-1 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition shadow-sm">
-                📄 <span data-i18n="downloadPDF">Download Comparison PDF</span>
+            <div class="flex flex-col sm:flex-row gap-3 mb-3">
+                <button id="addToListBtn"
+                class="flex-1 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition shadow-sm">
+                ➕ <span data-i18n="addToList">Add to List</span>
             </button>
-            <a href="https://janaushadhi.gov.in/kendraSearch.aspx" target="_blank" rel="noopener noreferrer"
-            class="flex-1 px-6 py-3 bg-white border-2 border-gray-200 hover:border-orange-300 text-gray-700 font-semibold rounded-xl transition text-center">
-            📍 <span data-i18n="findKendra">Nearest Janaushadhi Kendra</span>
-        </a>
+            <button id="downloadPDFBtn"
+            class="flex-1 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition shadow-sm">
+            📄 <span data-i18n="downloadPDF">Download Comparison PDF</span>
+        </button>
     </div>
+    <div class="flex flex-col sm:flex-row gap-3">
+        <button id="shareWhatsAppBtn"
+        class="flex-1 px-6 py-3 bg-white border-2 border-green-300 hover:border-green-500 hover:bg-green-50 text-green-700 font-semibold rounded-xl transition text-center">
+        💬 <span data-i18n="whatsappShare">Share on WhatsApp</span>
+    </button>
+    <a href="https://janaushadhi.gov.in/kendraSearch.aspx" target="_blank" rel="noopener noreferrer"
+    class="flex-1 px-6 py-3 bg-white border-2 border-gray-200 hover:border-orange-300 text-gray-700 font-semibold rounded-xl transition text-center">
+    📍 <span data-i18n="findKendra">Nearest Janaushadhi Kendra</span>
+</a>
+</div>
+</div>
+
+<!-- Condition list view (shown when a condition chip is clicked) -->
+<div id="conditionView" class="hidden">
+    <button id="conditionBack" class="mb-4 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-600 hover:border-orange-300 hover:text-orange-600 transition">
+        ← <span data-i18n="conditionBack">Back to search</span>
+    </button>
+    <h2 id="conditionTitle" class="text-2xl font-bold text-gray-800 mb-1"></h2>
+    <p id="conditionDesc" class="text-sm text-gray-500 mb-6"></p>
+    <div id="conditionList" class="space-y-3"></div>
+    <p class="text-xs text-gray-400 text-center mt-6" data-i18n="conditionNote">Tap a medicine to see full price comparison · Same active salt, available at Jan Aushadhi Kendras</p>
 </div>
 </div>
 </section>
+
+<!-- ===== BASKET UI ===== -->
+<!-- Floating "+ list" button -->
+<button id="basketFab"
+class="hidden fixed bottom-5 right-5 z-[70] w-14 h-14 rounded-full bg-green-600 hover:bg-green-700 text-white text-xl shadow-xl flex items-center justify-center transition-transform hover:scale-105"
+aria-label="Open medicines list">
+🧺
+<span id="basketCount"
+class="absolute -top-1 -right-1 min-w-6 h-6 px-1.5 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center border-2 border-white">0</span>
+</button>
+
+<!-- Basket overlay + drawer -->
+<div id="basketOverlay" class="hidden fixed inset-0 bg-black/50 z-[80] opacity-0 transition-opacity duration-300"></div>
+
+<div id="basketDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[90] shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-in-out">
+    <!-- Header -->
+    <div class="flex items-center justify-between p-4 border-b border-gray-100">
+        <div>
+            <h3 class="text-lg font-bold text-gray-800" data-i18n="basketTitle">Your Medicines List</h3>
+            <p class="text-xs text-gray-500"><span id="basketCountLabel">0</span> <span data-i18n="basketItemsLabel">medicine(s)</span></p>
+        </div>
+        <div class="flex items-center gap-1">
+            <button id="basketWhatsAppBtn" title="Share on WhatsApp"
+            class="w-9 h-9 flex items-center justify-center rounded-full text-green-600 hover:bg-green-50 transition">💬</button>
+            <button id="basketClearBtn" title="Clear list"
+            class="w-9 h-9 flex items-center justify-center rounded-full text-gray-400 hover:text-red-500 hover:bg-red-50 transition">🗑️</button>
+            <button id="basketCloseBtn" aria-label="Close"
+            class="w-9 h-9 flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 transition text-lg">✕</button>
+        </div>
+    </div>
+
+    <!-- Empty state -->
+    <div id="basketEmpty" class="hidden flex-1 flex flex-col items-center justify-center text-center p-6">
+        <div class="text-5xl mb-3">🛒</div>
+        <p class="font-semibold text-gray-700" data-i18n="basketEmpty">No medicines added yet.</p>
+        <p class="text-sm text-gray-500 mt-1" data-i18n="basketEmptyHint">Search a brand and tap “Add to List” to see your total monthly & yearly savings.</p>
+    </div>
+
+    <!-- Items -->
+    <div id="basketItems" class="hidden flex-1 overflow-y-auto p-4 space-y-3"></div>
+
+    <!-- Footer totals -->
+    <div id="basketFooter" class="hidden border-t border-gray-100 p-4 bg-orange-50">
+        <p class="text-xs text-gray-500" data-i18n="totalSavingsLabel">💰 Total Savings</p>
+        <div class="flex items-baseline gap-2 flex-wrap mt-1">
+            <span class="text-3xl font-black text-green-600">₹<span id="basketTotalMonthly">0</span></span>
+            <span class="text-sm text-gray-500" data-i18n="perMonthLabel">/ month</span>
+        </div>
+        <p class="text-lg font-bold text-gray-800">₹<span id="basketTotalYearly">0</span><span class="text-sm text-gray-500 font-normal"> /year</span></p>
+        <p id="basketAnchor" class="text-xs font-semibold text-green-700 mt-1"></p>
+
+        <div class="flex flex-col gap-2 mt-4">
+            <button id="basketShareBtn"
+            class="w-full px-4 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition shadow-sm">
+            💬 <span data-i18n="shareBasket">Share this list on WhatsApp</span>
+        </button>
+        <a href="https://janaushadhi.gov.in/kendraSearch.aspx" target="_blank" rel="noopener noreferrer"
+        class="w-full px-4 py-3 bg-white border-2 border-gray-200 hover:border-orange-300 text-gray-700 font-semibold rounded-xl transition text-center">
+        📍 <span data-i18n="findKendra">Nearest Janaushadhi Kendra</span>
+    </a>
+</div>
+<p class="text-[10px] text-gray-400 mt-3" data-i18n="basketNote">Estimates assume 30 days/month. Ask your doctor before switching any medicine.</p>
+</div>
+</div>
 
 <!-- ===== FOOTER ===== -->
 <footer class="mt-12 py-6 border-t border-orange-200 text-xs text-gray-500 text-center px-4">
@@ -325,5 +436,6 @@
 
 <!-- ===== JAVASCRIPT ===== -->
 <script src="js/app.js"></script>
+<script src="js/basket.js"></script>
 </body>
 </html>

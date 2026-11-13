@@ -29,6 +29,52 @@ const TRANSLATIONS = {
         noGeneric: "No Janaushadhi generic available yet",
         noGenericDesc: "This brand's active salt doesn't have a matching generic in the PMBJP Janaushadhi product basket yet. Check back later or ask your doctor for an alternative with the same salt.",
         savingsPercent: "savings",
+        // Condition explorer
+        conditionsTitle: "🧭 Browse by Condition",
+        conditionsSubtitle: "See what your condition's medicines cost — branded vs Janaushadhi — before your next doctor visit",
+        condDiabetes: "Diabetes",
+        condBPHeart: "Heart & Blood Pressure",
+        condPainFever: "Pain & Fever",
+        condInfection: "Infections",
+        condAcidity: "Acidity & Digestion",
+        condAsthma: "Asthma & Breathing",
+        condAllergy: "Allergy",
+        condThyroid: "Thyroid",
+        condVitamins: "Vitamins & Supplements",
+        condMental: "Mental Health",
+        condUrology: "Urology",
+        conditionBack: "Back to search",
+        conditionDesc: "Commonly prescribed medicines with their affordable Janaushadhi generic equivalents. Tap any medicine to see the full comparison.",
+        conditionEmpty: "No medicines found for this condition yet.",
+        conditionExample: "e.g.",
+        conditionBrandCount: "brands",
+        conditionNote: "Tap a medicine to see the full price comparison · Same active salt, available at Jan Aushadhi Kendras",
+        // Regimen calculator
+        tabsPerDay: "How many tablets/day?",
+        tabsPerDayShort: "tabs/day",
+        // Basket
+        addToList: "Add to List",
+        removeFromList: "Remove from List",
+        inList: "In List",
+        toastAdded: "added to your list",
+        toastRemoved: "removed from your list",
+        whatsappShare: "Share on WhatsApp",
+        basketTitle: "Your Medicines List",
+        basketItemsLabel: "medicine(s)",
+        basketEmpty: "No medicines added yet",
+        basketEmptyHint: "Search a brand and tap “Add to List” to see your total monthly & yearly savings.",
+        totalSavingsLabel: "💰 Total Savings",
+        perMonthLabel: "/ month",
+        shareBasket: "Share this list on WhatsApp",
+        basketNote: "Estimates assume 30 days/month. Ask your doctor before switching any medicine.",
+        basketSaveLabel: "You save",
+        basketClearConfirm: "Clear all medicines from your list?",
+        noGenericShort: "no generic",
+        // Savings anchors (real-world comparisons)
+        anchorGroceries: "≈ {n} months of family groceries",
+        anchorSchool: "≈ a full school kit & uniform",
+        anchorLPG: "≈ {n} LPG refill(s) a year",
+        anchorMobile: "≈ {n} months of mobile recharge",
         // Disclaimer banner
         bannerTitle: "⚠️ NOT MEDICAL ADVICE",
         bannerText: "This website is a <strong>social initiative</strong> to raise awareness about affordable generic alternatives available through the Government of India's PMBJP (Janaushadhi) scheme. <strong>Always follow your doctor's prescription.</strong> Do not switch or stop any medicine without consulting your doctor. Prices shown are approximate and may vary.",
@@ -60,12 +106,58 @@ const TRANSLATIONS = {
         noGeneric: "अभी तक कोई जन औषधि जेनेरिक उपलब्ध नहीं",
         noGenericDesc: "इस ब्रांड के सक्रिय साल्ट का PMBJP जन औषधि उत्पाद बास्केट में अभी तक कोई मेल खाने वाला जेनेरिक नहीं है। बाद में पुनः जाँच करें या समान साल्ट वाले विकल्प के लिए अपने डॉक्टर से पूछें।",
         savingsPercent: "बचत",
+        // Condition explorer
+        conditionsTitle: "🧭 स्थिति के अनुसार देखें",
+        conditionsSubtitle: "अपने रोग की दवाओं की कीमत पहले ही जानें — ब्रांडेड बनाम जन औषधि — डॉक्टर के पास जाने से पहले",
+        condDiabetes: "मधुमेह",
+        condBPHeart: "हृदय और रक्तचाप",
+        condPainFever: "दर्द और बुखार",
+        condInfection: "संक्रमण",
+        condAcidity: "एसिडिटी और पाचन",
+        condAsthma: "अस्थमा और साँस",
+        condAllergy: "एलर्जी",
+        condThyroid: "थायराइड",
+        condVitamins: "विटामिन और सप्लीमेंट",
+        condMental: "मानसिक स्वास्थ्य",
+        condUrology: "यूरोलॉजी",
+        conditionBack: "खोज पर वापस जाएँ",
+        conditionDesc: "आम तौर पर लिखी जाने वाली दवाओं और उनके सस्ते जन औषधि जेनेरिक विकल्प। पूरी तुलना देखने के लिए कोई भी दवा दबाएँ।",
+        conditionEmpty: "इस स्थिति के लिए अभी कोई दवा नहीं मिली।",
+        conditionExample: "जैसे",
+        conditionBrandCount: "ब्रांड",
+        conditionNote: "पूरी तुलना देखने के लिए कोई भी दवा दबाएँ · समान साल्ट, जन औषधि केंद्रों पर उपलब्ध",
+        // Regimen calculator
+        tabsPerDay: "रोज़ कितनी गोलियाँ लेते हैं?",
+        tabsPerDayShort: "गोली/दिन",
+        // Basket
+        addToList: "सूची में जोड़ें",
+        removeFromList: "सूची से हटाएँ",
+        inList: "सूची में",
+        toastAdded: "आपकी सूची में जोड़ दी गई",
+        toastRemoved: "आपकी सूची से हटा दी गई",
+        whatsappShare: "व्हाट्सऐप पर साझा करें",
+        basketTitle: "आपकी दवाओं की सूची",
+        basketItemsLabel: "दवा(एँ)",
+        basketEmpty: "अभी तक कोई दवा नहीं जोड़ी गई",
+        basketEmptyHint: "कोई ब्रांड खोजें और 'सूची में जोड़ें' दबाएँ — कुल मासिक और वार्षिक बचत देखें।",
+        totalSavingsLabel: "💰 कुल बचत",
+        perMonthLabel: "/ माह",
+        shareBasket: "यह सूची व्हाट्सऐप पर साझा करें",
+        basketNote: "अनुमान 30 दिन/माह पर आधारित हैं। कोई भी दवा बदलने से पहले अपने डॉक्टर से पूछें।",
+        basketSaveLabel: "बचत",
+        basketClearConfirm: "सूची से सभी दवाएँ हटाएँ?",
+        noGenericShort: "जेनेरिक नहीं",
+        // Savings anchors (real-world comparisons)
+        anchorGroceries: "≈ {n} महीने की पारिवारिक किराना खरीद",
+        anchorSchool: "≈ पूरा स्कूल किट और यूनिफ़ॉर्म",
+        anchorLPG: "≈ साल में {n} गैस सिलेंडर",
+        anchorMobile: "≈ {n} महीने का मोबाइल रिचार्ज",
         // Disclaimer banner
         bannerTitle: "⚠️ चिकित्सीय सलाह नहीं",
         bannerText: "यह वेबसाइट एक <strong>सामाजिक पहल</strong> है जो भारत सरकार की PMBJP (जन औषधि) योजना के तहत सस्ती जेनेरिक दवाओं के बारे में जागरूकता फैलाने के लिए है। <strong>हमेशा अपने डॉक्टर के नुस्खे का पालन करें।</strong> बिना डॉक्टर की सलाह के कोई भी दवा बदलना या बंद करना खतरनाक हो सकता है। दिखाए गए मूल्य अनुमानित हैं।",
         // Footer
         footerTitle: "🩺 सामाजिक पहल — चिकित्सीय सलाह नहीं",
-        footerDisclaimer: "यह वेबसाइट एक गैर-सरकारी सामाजिक पहल है जो PMBJP (जन औषधि) योजना के तहत सस्ती जेनेरिक दवाओं के विकल्पों के बारे में जागरूकता फैलाने के लिए है। हम चिकित्सीय सलाह, निदान या उपचार सं��ंधी सिफारिशें प्रदान नहीं करते हैं। अपनी दवा में कोई भी बदलाव करने से पहले हमेशा एक पंजीकृत चिकित्सक से सलाह लें। दिखाए गए मूल्य अनुमानित हैं।",
+        footerDisclaimer: "यह वेबसाइट एक गैर-सरकारी सामाजिक पहल है जो PMBJP (जन औषधि) योजना के तहत सस्ती जेनेरिक दवाओं के विकल्पों के बारे में जागरूकता फैलाने के लिए है। हम चिकित्सीय सलाह, निदान या उपचार संबंधी सिफारिशें प्रदान नहीं करते हैं। अपनी दवा में कोई भी बदलाव करने से पहले हमेशा एक पंजीकृत चिकित्सक से सलाह लें। दिखाए गए मूल्य अनुमानित हैं।",
         footerData: "डेटा PMBJP (जन औषधि) आधिकारिक मूल्य सूची से लिया गया है।",
     },
 };
@@ -129,6 +221,11 @@ function toggleLanguage() {
     // Re-render any current result to update dynamic content
     if (window.__currentResult) {
         renderResult(window.__currentResult);
+    }
+
+    // Re-render basket, condition view, and dynamic labels
+    if (window.__i18nChanged) {
+        window.__i18nChanged();
     }
 
     // Store preference
